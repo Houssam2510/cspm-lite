@@ -1,0 +1,25 @@
+# Secrets / credentials — NE JAMAIS COMMITTER
+.env
+*.pem
+*.key
+.aws/
+credentials
+
+# Terraform — contient souvent des données sensibles
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Rapports générés
+*.report.json
+*.report.html
