@@ -20,6 +20,12 @@ env:
   AWS_SECRET_ACCESS_KEY: testing
   AWS_DEFAULT_REGION: us-east-1
 
+  # Outils de securite epingles par version d'image. Voir ADR-006 : on n'utilise
+  # pas les actions GitHub correspondantes, parce qu'elles resolvent a l'execution
+  # des sous-actions par tag, ce qui annule l'interet de l'epinglage par SHA.
+  TRIVY_IMAGE: aquasec/trivy:0.72.0
+  SYFT_IMAGE: anchore/syft:v1.50.0
+
 jobs:
   lint:
     name: Lint et typage
@@ -27,9 +33,9 @@ jobs:
     steps:
       # Les actions sont epinglees par SHA et non par tag : un tag est mutable,
       # un attaquant qui compromet le depot d'une action pourrait faire pointer
-      # "v4" vers du code malveillant execute dans notre CI.
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+      # "v5" vers du code malveillant execute dans notre CI.
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.12"
       - run: pip install -e ".[dev]"
@@ -45,8 +51,8 @@ jobs:
       matrix:
         python: ["3.11", "3.12"]
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: ${{ matrix.python }}
       - run: pip install -e ".[dev]"
@@ -54,15 +60,33 @@ jobs:
         run: pytest --cov=cspm_lite --cov-report=term-missing --cov-fail-under=80
       - name: Verifier que la suite tourne aussi sans dependances de dev
         if: matrix.python == '3.12'
+        run: cd tests && PYTHONPATH=../src python -m unittest discover -q
+
+  exercices:
+    name: Exercices pedagogiques intacts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+      # Les squelettes d'exercices doivent rester incomplets : si l'un d'eux
+      # passait au vert, c'est qu'une correction a fuite dans le depot.
+      - name: Aucun exercice ne doit passer
         run: |
-          cd tests && PYTHONPATH=../src python -m unittest discover -q
+          sortie=$(bash learning/exercices/verifier.sh)
+          echo "$sortie"
+          echo "$sortie" | grep -q "0 OK" || {
+            echo "::error::un exercice passe au vert : une solution a fuite dans le depot"
+            exit 1
+          }
 
   demo:
     name: Scan de demonstration
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.12"
       - run: pip install -e .
@@ -75,13 +99,17 @@ jobs:
           code=$?
           set -e
           test "$code" -eq 1 || { echo "code de sortie attendu 1, obtenu $code"; exit 1; }
-      - name: Regenerer le rapport d'exemple
-        run: cspm-lite scan --demo --format html -o docs/example-report.html --fail-on NONE
-      - uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
+      - name: Regenerer les rapports d'exemple
+        run: |
+          cspm-lite scan --demo --format html -o docs/example-report.html --fail-on NONE
+          cspm-lite history --db /tmp/demo.db --seed-demo --format html \
+            -o docs/example-history.html
+      - uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5
         with:
-          name: rapport-exemple
+          name: rapports-exemple
           path: |
             docs/example-report.html
+            docs/example-history.html
             rapport.md
 
   image:
@@ -89,22 +117,43 @@ jobs:
     runs-on: ubuntu-latest
     needs: [lint, test]
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+
       - name: Construire l'image
         run: docker build -t cspm-lite:ci .
-      - name: L'image fonctionne
-        run: docker run --rm cspm-lite:ci --version
+
+      - name: L'image fonctionne et ne tourne pas en root
+        run: |
+          docker run --rm cspm-lite:ci --version
+          uid=$(docker run --rm --entrypoint id cspm-lite:ci -u)
+          test "$uid" -ne 0 || { echo "l'image tourne en root"; exit 1; }
+          echo "UID d'execution : $uid"
+
+      # Trivy et Syft sont lances depuis leur image officielle epinglee plutot que
+      # via leur action GitHub : aucune sous-action resolue par tag, donc aucune
+      # dependance transitive mutable. Voir ADR-006.
       - name: Scan Trivy de l'image
-        uses: aquasecurity/trivy-action@18f2510ee396bbf400402947b394f2dd8c87dbb0 # 0.29.0
-        with:
-          image-ref: cspm-lite:ci
-          format: table
-          exit-code: "1"
-          severity: CRITICAL,HIGH
-          ignore-unfixed: true
+        run: |
+          docker run --rm \
+            -v /var/run/docker.sock:/var/run/docker.sock \
+            -v "$HOME/.cache/trivy:/root/.cache/trivy" \
+            "$TRIVY_IMAGE" image \
+              --scanners vuln \
+              --severity CRITICAL,HIGH \
+              --ignore-unfixed \
+              --exit-code 1 \
+              --format table \
+              cspm-lite:ci
+
       - name: Generer un SBOM
-        uses: anchore/sbom-action@df80a981bc6edbc4e220a492d3cbe9f5547a6e75 # v0.17.9
+        run: |
+          docker run --rm \
+            -v /var/run/docker.sock:/var/run/docker.sock \
+            "$SYFT_IMAGE" cspm-lite:ci -o spdx-json > sbom.spdx.json
+          echo "composants inventories : $(python3 -c \
+            "import json;print(len(json.load(open('sbom.spdx.json'))['packages']))")"
+
+      - uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5
         with:
-          image: cspm-lite:ci
-          format: spdx-json
-          artifact-name: sbom.spdx.json
+          name: sbom
+          path: sbom.spdx.json

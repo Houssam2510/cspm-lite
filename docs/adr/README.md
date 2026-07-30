@@ -17,3 +17,4 @@ nouveau qui le remplace (`Statut : remplacé par ADR-00X`).
 | [003](003-isolation-des-pannes.md) | Isoler les pannes de checks | Accepté |
 | [004](004-score-pondere.md) | Pondérer le score par sévérité | Accepté |
 | [005](005-exclusions-datees.md) | Exiger une date d'expiration sur les exclusions | Accepté |
+| [006](006-pas-d-actions-pour-les-outils-de-securite.md) | Lancer Trivy et Syft depuis leur image, pas via leur action | Accepté |
