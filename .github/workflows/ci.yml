@@ -122,12 +122,19 @@ jobs:
       - name: Construire l'image
         run: docker build -t cspm-lite:ci .
 
-      - name: L'image fonctionne et ne tourne pas en root
+      - name: L'image fonctionne, sans root ni gestionnaire de paquets
         run: |
           docker run --rm cspm-lite:ci --version
+          docker run --rm cspm-lite:ci scan --demo --fail-on NONE --format json > /dev/null
           uid=$(docker run --rm --entrypoint id cspm-lite:ci -u)
           test "$uid" -ne 0 || { echo "l'image tourne en root"; exit 1; }
           echo "UID d'execution : $uid"
+          # Une image de production ne doit embarquer aucun moyen d'installer du code.
+          if docker run --rm --entrypoint sh cspm-lite:ci -c "command -v pip" 2>/dev/null; then
+            echo "::error::pip est present dans l'image finale"
+            exit 1
+          fi
+          echo "aucun gestionnaire de paquets dans l'image" 
 
       # Trivy et Syft sont lances depuis leur image officielle epinglee plutot que
       # via leur action GitHub : aucune sous-action resolue par tag, donc aucune

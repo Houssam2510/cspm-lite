@@ -20,8 +20,19 @@ COPY pyproject.toml README.md ./
 COPY src ./src
 
 RUN python -m venv /opt/venv \
-    && /opt/venv/bin/pip install --upgrade pip \
-    && /opt/venv/bin/pip install .
+    && /opt/venv/bin/pip install --upgrade pip setuptools \
+    && /opt/venv/bin/pip install . \
+    # Le runtime n'a pas besoin d'un gestionnaire de paquets. Le retirer a deux
+    # effets : ses vulnerabilites (pip embarque setuptools et des dependances
+    # vendorisees comme msgpack) disparaissent de l'image, et un attaquant qui
+    # obtiendrait l'execution de code n'y trouve aucun moyen d'installer du sien.
+    # C'est un scan Trivy en CI qui a rendu ce probleme visible.
+    && /opt/venv/bin/pip uninstall -y pip setuptools wheel || true \
+    && rm -rf /opt/venv/lib/python*/site-packages/pip* \
+              /opt/venv/lib/python*/site-packages/setuptools* \
+              /opt/venv/lib/python*/site-packages/pkg_resources \
+              /opt/venv/lib/python*/site-packages/wheel* \
+              /opt/venv/bin/pip*
 
 
 FROM python:3.12-slim AS runtime
