@@ -203,6 +203,7 @@ dépendances de dev sont absentes.
 - [Catalogue des contrôles](docs/CHECKS.md)
 - [Contribuer](CONTRIBUTING.md) · [Politique de sécurité](SECURITY.md) · [Changelog](CHANGELOG.md)
 - [Guide d'apprentissage complet](learning/) — roadmap, concepts, exercices
+- [Fiche d'entretien (PDF, 7 pages)](learning/cspm-lite-entretien.pdf) — décisions, pièges, limites
 
 ## Limites connues
 
