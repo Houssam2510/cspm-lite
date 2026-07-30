@@ -50,28 +50,31 @@ Collecte et évaluation sont **séparées** : les collectors ne savent rien de l
 sécurité, les checks ne savent rien de `boto3`. C'est ce qui rend l'outil testable
 sans compte AWS et extensible.
 
-## Contrôles prévus
+## Démonstration en 30 secondes
+
+Aucun compte AWS, aucune credential, aucune dépendance à installer :
+
+```bash
+git clone https://github.com/Houssam2510/cspm-lite && cd cspm-lite
+PYTHONPATH=src python3 -m cspm_lite.cli scan --demo --format html -o rapport.html
+```
+
+Le mode `--demo` évalue les 25 contrôles sur un inventaire fictif reproduisant le labo
+Terraform de [`lab/`](lab/). Rapport d'exemple : [`docs/example-report.html`](docs/example-report.html).
+
+## Contrôles
+
+**25 contrôles** implémentés, chacun avec son identifiant CIS, un texte de remédiation
+et des tests unitaires. Catalogue complet : [`docs/CHECKS.md`](docs/CHECKS.md).
 
 | Domaine | Contrôles | Exemples |
 |---|---|---|
-| S3 | 8 | Block Public Access, ACL publique, chiffrement, versioning, TLS obligatoire |
-| IAM | 10 | MFA root, clés > 90 jours, `AdministratorAccess`, policies `*:*` |
-| Réseau | 9 | SSH/RDP/bases exposés, SG default, VPC Flow Logs, IMDSv2 |
-| Logging | 6 | CloudTrail multi-région, validation d'intégrité, chiffrement KMS |
+| S3 | 6 | Block Public Access, ACL/policy publique, chiffrement, versioning, TLS obligatoire |
+| IAM | 8 | MFA root, clés > 90 jours, credentials dormantes, `AdministratorAccess`, policies `*:*` |
+| Réseau | 6 | SSH/RDP/bases exposés (IPv4 **et** IPv6), SG `default`, Flow Logs, EBS, IMDSv2 |
+| Logging | 5 | CloudTrail multi-région, validation d'intégrité, KMS, CloudWatch, état réel |
 
-## État d'avancement
-
-- [ ] Phase 0 — Fondations (packaging, ruff, mypy)
-- [ ] Phase 1 — Modèle de données et moteur de règles
-- [ ] Phase 2 — Authentification et collecteurs
-- [ ] Phase 3 — Les checks de sécurité
-- [ ] Phase 4 — Reporters
-- [ ] Phase 5 — CLI
-- [ ] Phase 6 — Labo Terraform vulnérable
-- [ ] Phase 7 — Tests (moto)
-- [ ] Phase 8 — CI/CD et Docker
-- [ ] Phase 9 — Historisation et métriques
-- [ ] Phase 10 — Finition et release
+Le mapping CIS vise le *CIS AWS Foundations Benchmark v3.0*.
 
 ## Installation
 
@@ -80,6 +83,78 @@ python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 cspm-lite --help
 ```
+
+## Usage
+
+```bash
+cspm-lite list-checks                      # les 25 contrôles
+cspm-lite whoami                           # quel compte vais-je auditer ?
+cspm-lite scan --profile mon-profil        # scan complet, sortie Markdown
+cspm-lite scan --format html -o rapport.html
+cspm-lite scan --service s3 --severity-min HIGH
+cspm-lite scan --role-arn arn:aws:iam::123:role/scanner --external-id xyz
+cspm-lite scan --format asff -o findings.json   # export AWS Security Hub
+```
+
+**Codes de sortie**, le contrat avec une CI :
+
+| Code | Signification |
+|---|---|
+| `0` | aucun finding au-dessus de `--fail-on` |
+| `1` | au moins un finding atteint le seuil |
+| `2` | erreur d'exécution (credentials, droits, panne) |
+
+## Permissions requises
+
+Le scanner est un outil de **lecture seule**. La policy managée AWS `SecurityAudit`
+suffit. Ne lui donnez jamais `AdministratorAccess` : un outil d'audit sur-privilégié
+est lui-même le risque.
+
+## Décisions d'architecture
+
+**Une seule dépendance runtime : `boto3`.** La CLI utilise `argparse`, le rendu HTML
+n'utilise aucun moteur de template. Pour un outil de sécurité, chaque dépendance est
+une surface d'attaque de la chaîne d'approvisionnement.
+
+**Collecte et évaluation strictement séparées.** Les collecteurs ne connaissent pas la
+sécurité, les checks ne connaissent pas `boto3`. Conséquence directe : les 25 contrôles
+sont testés sans compte AWS ni mock réseau, et ajouter un contrôle est une fonction
+décorée, jamais une modification du moteur.
+
+**Isolation des pannes.** Un check qui lève une exception produit un finding
+`NOT_AVAILABLE` et le scan continue. En production, un bucket supprimé pendant le scan
+ne doit pas interrompre les 24 autres contrôles.
+
+**Rapport HTML autonome.** CSS et JS en ligne, aucune requête externe : ouvrir un
+rapport de sécurité ne doit pas divulguer le nom de vos ressources aux logs d'un CDN.
+
+## Tests
+
+```bash
+pytest                                              # avec les dépendances de dev
+cd tests && PYTHONPATH=../src python3 -m unittest   # sans rien installer
+```
+
+177 tests. Les tests de collecteurs utilisent `moto` et se sautent proprement si les
+dépendances de dev sont absentes.
+
+## État d'avancement
+
+- [x] Phase 0 — Fondations (packaging, ruff, mypy)
+- [x] Phase 1 — Modèle de données et moteur de règles
+- [x] Phase 2 — Authentification et collecteurs
+- [x] Phase 3 — Les checks de sécurité (25)
+- [x] Phase 4 — Reporters (JSON, Markdown, HTML, ASFF)
+- [x] Phase 5 — CLI
+- [x] Phase 6 — Labo Terraform vulnérable
+- [x] Phase 7 — Tests
+- [x] Phase 8 — CI/CD et Docker
+- [ ] Phase 9 — Historisation et métriques de posture
+- [ ] Phase 10 — Finition et release v1.0.0
+
+Limites assumées à ce stade : pas d'analyse de chemins d'attaque, pas de contexte
+métier donc pas de priorisation réelle, un instantané et non de la détection temps
+réel, un seul fournisseur cloud.
 
 ## Guide d'apprentissage
 
