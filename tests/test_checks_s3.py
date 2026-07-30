@@ -86,11 +86,15 @@ class TestPolicyPublique(unittest.TestCase):
         self.assertFalse(policy_allows_anyone(policy([{"Effect": "Deny", "Principal": "*"}])))
 
     def test_condition_restreint(self):
-        p = policy([{
-            "Effect": "Allow",
-            "Principal": "*",
-            "Condition": {"StringEquals": {"aws:SourceVpce": "vpce-1"}},
-        }])
+        p = policy(
+            [
+                {
+                    "Effect": "Allow",
+                    "Principal": "*",
+                    "Condition": {"StringEquals": {"aws:SourceVpce": "vpce-1"}},
+                }
+            ]
+        )
         self.assertFalse(policy_allows_anyone(p))
 
     def test_principal_service(self):
@@ -129,26 +133,38 @@ class TestBucketPublic(unittest.TestCase):
 
 class TestTLS(unittest.TestCase):
     def test_deny_secure_transport(self):
-        p = policy([{
-            "Effect": "Deny",
-            "Principal": "*",
-            "Action": "s3:*",
-            "Condition": {"Bool": {"aws:SecureTransport": "false"}},
-        }])
+        p = policy(
+            [
+                {
+                    "Effect": "Deny",
+                    "Principal": "*",
+                    "Action": "s3:*",
+                    "Condition": {"Bool": {"aws:SecureTransport": "false"}},
+                }
+            ]
+        )
         self.assertTrue(policy_enforces_tls(p))
 
     def test_bool_if_exists(self):
-        p = policy([{
-            "Effect": "Deny",
-            "Condition": {"BoolIfExists": {"aws:SecureTransport": "false"}},
-        }])
+        p = policy(
+            [
+                {
+                    "Effect": "Deny",
+                    "Condition": {"BoolIfExists": {"aws:SecureTransport": "false"}},
+                }
+            ]
+        )
         self.assertTrue(policy_enforces_tls(p))
 
     def test_allow_ne_compte_pas(self):
-        p = policy([{
-            "Effect": "Allow",
-            "Condition": {"Bool": {"aws:SecureTransport": "true"}},
-        }])
+        p = policy(
+            [
+                {
+                    "Effect": "Allow",
+                    "Condition": {"Bool": {"aws:SecureTransport": "true"}},
+                }
+            ]
+        )
         self.assertFalse(policy_enforces_tls(p))
 
     def test_check(self):
@@ -169,8 +185,9 @@ class TestAutresControles(unittest.TestCase):
         self.assertEqual([f.status for f in s3_versioning(inv)], [Status.PASS, Status.FAIL])
 
     def test_versioning_absent(self):
-        self.assertEqual(s3_versioning(inventaire(bucket("x", versioning={})))[0].status,
-                         Status.FAIL)
+        self.assertEqual(
+            s3_versioning(inventaire(bucket("x", versioning={})))[0].status, Status.FAIL
+        )
 
     def test_logging(self):
         inv = inventaire(bucket("ok"), bucket("ko", logging={}))

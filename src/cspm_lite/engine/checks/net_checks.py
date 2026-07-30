@@ -128,9 +128,8 @@ def net_all_ports_open(inv: Inventory) -> list[Finding]:
             str(perm.get("IpProtocol")) == TOUS_PROTOCOLES and permission_world_open(perm)
             for perm in sg.raw.get("IpPermissions", [])
         )
-        findings.append(
-            make_finding("NET-002", sg, not ouvert, "tous protocoles depuis 0.0.0.0/0" if ouvert else "")
-        )
+        details = "tous protocoles depuis 0.0.0.0/0" if ouvert else ""
+        findings.append(make_finding("NET-002", sg, not ouvert, details))
     return findings
 
 
@@ -205,7 +204,8 @@ def net_ebs_encrypted(inv: Inventory) -> list[Finding]:
     "lire les credentials du role d'instance. C'est le mecanisme de la breche "
     "Capital One de 2019.",
     references=(
-        "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html",
+        "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/"
+        "configuring-instance-metadata-service.html",
     ),
 )
 def net_imdsv2_required(inv: Inventory) -> list[Finding]:

@@ -149,7 +149,11 @@ def render_html(result: ScanResult) -> str:
         ("En echec", str(len(result.failed)), False),
         ("Ressources", str(len({f.resource.id for f in result.findings})), False),
     ]
-    tuiles += [(nom.capitalize(), str(counts.get(nom, 0)), False) for nom in _SEVERITY_ORDER if counts.get(nom)]
+    tuiles += [
+        (nom.capitalize(), str(counts.get(nom, 0)), False)
+        for nom in _SEVERITY_ORDER
+        if counts.get(nom)
+    ]
 
     html_tuiles = []
     for cle, valeur, jauge in tuiles:

@@ -45,7 +45,9 @@ class TestEnregistrement(BaseRegistre):
             return []
 
         meta = get_checks()[0]
-        self.assertEqual((meta.id, meta.title, meta.service, meta.cis), ("S3-X", "T", "s3", "2.1.4"))
+        self.assertEqual(
+            (meta.id, meta.title, meta.service, meta.cis), ("S3-X", "T", "s3", "2.1.4")
+        )
         self.assertEqual(meta.severity, Severity.HIGH)
 
     def test_fonction_renvoyee_intacte(self):
@@ -101,8 +103,9 @@ class TestFiltres(BaseRegistre):
         self.assertEqual([m.id for m in get_checks(ids=["iam-1"])], ["IAM-1"])
 
     def test_combinaison(self):
-        self.assertEqual([m.id for m in get_checks(service="s3", severity_min=Severity.HIGH)],
-                         ["S3-1"])
+        self.assertEqual(
+            [m.id for m in get_checks(service="s3", severity_min=Severity.HIGH)], ["S3-1"]
+        )
 
 
 class TestIsolationDesPannes(BaseRegistre):

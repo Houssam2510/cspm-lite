@@ -98,10 +98,13 @@ class TestPortsSensibles(unittest.TestCase):
         self.assertEqual(open_sensitive_ports(sg.raw), set())
 
     def test_check_details_lisibles(self):
-        sg = security_group("web", [
-            permission("tcp", 22, v4=("0.0.0.0/0",)),
-            permission("tcp", 3306, v4=("0.0.0.0/0",)),
-        ])
+        sg = security_group(
+            "web",
+            [
+                permission("tcp", 22, v4=("0.0.0.0/0",)),
+                permission("tcp", 3306, v4=("0.0.0.0/0",)),
+            ],
+        )
         finding = net_sensitive_ports(inventaire(sg))[0]
         self.assertEqual(finding.status, Status.FAIL)
         self.assertEqual(finding.details, "22 (SSH), 3306 (MySQL)")

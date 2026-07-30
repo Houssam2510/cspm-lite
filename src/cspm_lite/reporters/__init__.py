@@ -1,6 +1,10 @@
 """Reporters : rendu d'un ScanResult dans differents formats."""
 
 from cspm_lite.reporters.asff_reporter import render_asff
+from cspm_lite.reporters.history_reporter import (
+    render_history_html,
+    render_history_markdown,
+)
 from cspm_lite.reporters.html_reporter import render_html
 from cspm_lite.reporters.json_reporter import render_json
 from cspm_lite.reporters.markdown_reporter import render_markdown
@@ -12,4 +16,12 @@ RENDERERS = {
     "asff": render_asff,
 }
 
-__all__ = ["RENDERERS", "render_asff", "render_html", "render_json", "render_markdown"]
+__all__ = [
+    "RENDERERS",
+    "render_asff",
+    "render_history_html",
+    "render_history_markdown",
+    "render_html",
+    "render_json",
+    "render_markdown",
+]

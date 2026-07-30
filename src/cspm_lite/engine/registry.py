@@ -36,7 +36,7 @@ REGISTRY: dict[str, CheckMeta] = {}
 
 def check(
     *,
-    id: str,  # noqa: A002 - "id" est le vocabulaire du domaine (identifiant de controle)
+    id: str,
     title: str,
     severity: Severity,
     service: str,
@@ -113,7 +113,7 @@ def run_checks(inventory: Inventory, checks: list[CheckMeta] | None = None) -> l
     for meta in metas:
         try:
             findings.extend(meta.func(inventory) or [])
-        except Exception as exc:  # noqa: BLE001 - isolation volontaire, voir docstring
+        except Exception as exc:
             findings.append(
                 Finding(
                     check_id=meta.id,

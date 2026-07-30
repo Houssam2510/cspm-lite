@@ -80,31 +80,39 @@ class TestMFAConsole(unittest.TestCase):
 
 class TestRotationDesCles(unittest.TestCase):
     def test_cle_recente(self):
-        inv = inventaire(utilisateur(access_key_1_active="true",
-                                     access_key_1_last_rotated=il_y_a(10)))
+        inv = inventaire(
+            utilisateur(access_key_1_active="true", access_key_1_last_rotated=il_y_a(10))
+        )
         self.assertEqual(iam_key_rotation(inv)[0].status, Status.PASS)
 
     def test_cle_ancienne(self):
-        inv = inventaire(utilisateur(access_key_1_active="true",
-                                     access_key_1_last_rotated=il_y_a(200)))
+        inv = inventaire(
+            utilisateur(access_key_1_active="true", access_key_1_last_rotated=il_y_a(200))
+        )
         self.assertEqual(iam_key_rotation(inv)[0].status, Status.FAIL)
 
     def test_limite_90_jours(self):
         for jours, attendu in ((90, Status.PASS), (91, Status.FAIL)):
-            inv = inventaire(utilisateur(access_key_1_active="true",
-                                         access_key_1_last_rotated=il_y_a(jours)))
+            inv = inventaire(
+                utilisateur(access_key_1_active="true", access_key_1_last_rotated=il_y_a(jours))
+            )
             self.assertEqual(iam_key_rotation(inv)[0].status, attendu, f"{jours} jours")
 
     def test_cle_inactive_ignoree(self):
-        inv = inventaire(utilisateur(access_key_1_active="false",
-                                     access_key_1_last_rotated=il_y_a(999)))
+        inv = inventaire(
+            utilisateur(access_key_1_active="false", access_key_1_last_rotated=il_y_a(999))
+        )
         self.assertEqual(iam_key_rotation(inv), [])
 
     def test_deux_cles(self):
-        inv = inventaire(utilisateur(
-            access_key_1_active="true", access_key_1_last_rotated=il_y_a(10),
-            access_key_2_active="true", access_key_2_last_rotated=il_y_a(400),
-        ))
+        inv = inventaire(
+            utilisateur(
+                access_key_1_active="true",
+                access_key_1_last_rotated=il_y_a(10),
+                access_key_2_active="true",
+                access_key_2_last_rotated=il_y_a(400),
+            )
+        )
         findings = iam_key_rotation(inv)
         self.assertEqual([f.status for f in findings], [Status.PASS, Status.FAIL])
         self.assertIn("access_key_2", findings[1].details)
@@ -125,14 +133,21 @@ class TestCredentialsDormantes(unittest.TestCase):
 
     def test_jamais_utilise_se_rabat_sur_la_creation(self):
         """password_last_used vaut N/A si jamais utilise : on mesure depuis la creation."""
-        inv = inventaire(utilisateur(password_enabled="true", password_last_used="N/A",
-                                     user_creation_time=il_y_a(300)))
+        inv = inventaire(
+            utilisateur(
+                password_enabled="true", password_last_used="N/A", user_creation_time=il_y_a(300)
+            )
+        )
         self.assertEqual(iam_unused_credentials(inv)[0].status, Status.FAIL)
 
     def test_cle_dormante(self):
-        inv = inventaire(utilisateur(access_key_1_active="true",
-                                     access_key_1_last_rotated=il_y_a(300),
-                                     access_key_1_last_used_date=il_y_a(300)))
+        inv = inventaire(
+            utilisateur(
+                access_key_1_active="true",
+                access_key_1_last_rotated=il_y_a(300),
+                access_key_1_last_used_date=il_y_a(300),
+            )
+        )
         self.assertEqual(iam_unused_credentials(inv)[0].status, Status.FAIL)
 
 
@@ -142,34 +157,40 @@ class TestPrivileges(unittest.TestCase):
         self.assertEqual(iam_no_direct_admin(inv)[0].status, Status.FAIL)
 
     def test_policy_lecture_seule(self):
-        inv = inventaire(utilisateur("bob", attached_policies=["arn:aws:iam::aws:policy/ReadOnlyAccess"]))
+        lecture = ["arn:aws:iam::aws:policy/ReadOnlyAccess"]
+        inv = inventaire(utilisateur("bob", attached_policies=lecture))
         self.assertEqual(iam_no_direct_admin(inv)[0].status, Status.PASS)
 
     def test_wildcard(self):
         doc = {"Statement": [{"Effect": "Allow", "Action": "*", "Resource": "*"}]}
-        self.assertEqual(iam_no_wildcard_policy(inventaire(policy_iam("p", doc)))[0].status,
-                         Status.FAIL)
+        self.assertEqual(
+            iam_no_wildcard_policy(inventaire(policy_iam("p", doc)))[0].status, Status.FAIL
+        )
 
     def test_wildcard_en_liste(self):
         doc = {"Statement": [{"Effect": "Allow", "Action": ["s3:*", "*"], "Resource": ["*"]}]}
-        self.assertEqual(iam_no_wildcard_policy(inventaire(policy_iam("p", doc)))[0].status,
-                         Status.FAIL)
+        self.assertEqual(
+            iam_no_wildcard_policy(inventaire(policy_iam("p", doc)))[0].status, Status.FAIL
+        )
 
     def test_wildcard_action_seule_toleree(self):
         """Action '*' sur une ressource precise reste borne : pas de FAIL ici."""
         doc = {"Statement": [{"Effect": "Allow", "Action": "*", "Resource": "arn:aws:s3:::b/*"}]}
-        self.assertEqual(iam_no_wildcard_policy(inventaire(policy_iam("p", doc)))[0].status,
-                         Status.PASS)
+        self.assertEqual(
+            iam_no_wildcard_policy(inventaire(policy_iam("p", doc)))[0].status, Status.PASS
+        )
 
     def test_deny_wildcard_non_signale(self):
         doc = {"Statement": [{"Effect": "Deny", "Action": "*", "Resource": "*"}]}
-        self.assertEqual(iam_no_wildcard_policy(inventaire(policy_iam("p", doc)))[0].status,
-                         Status.PASS)
+        self.assertEqual(
+            iam_no_wildcard_policy(inventaire(policy_iam("p", doc)))[0].status, Status.PASS
+        )
 
     def test_statement_dictionnaire(self):
         doc = {"Statement": {"Effect": "Allow", "Action": "*", "Resource": "*"}}
-        self.assertEqual(iam_no_wildcard_policy(inventaire(policy_iam("p", doc)))[0].status,
-                         Status.FAIL)
+        self.assertEqual(
+            iam_no_wildcard_policy(inventaire(policy_iam("p", doc)))[0].status, Status.FAIL
+        )
 
 
 class TestPolitiqueMotDePasse(unittest.TestCase):

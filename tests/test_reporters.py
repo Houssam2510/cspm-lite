@@ -30,7 +30,9 @@ def finding(check="S3-002", status=Status.FAIL, sev=Severity.CRITICAL, rid="arn:
 def resultat(findings=None):
     return ScanResult(
         account_id="111122223333",
-        findings=findings if findings is not None else [
+        findings=findings
+        if findings is not None
+        else [
             finding(),
             finding("IAM-004", Status.FAIL, Severity.HIGH, "arn:aws:iam::1:user/bob"),
             finding("S3-003", Status.PASS, Severity.MEDIUM),
@@ -114,8 +116,19 @@ class TestHtml(unittest.TestCase):
 class TestAsff(unittest.TestCase):
     def test_champs_obligatoires(self):
         doc = finding_to_asff(finding(), "111122223333", "eu-west-3")
-        for cle in ("SchemaVersion", "Id", "ProductArn", "GeneratorId", "AwsAccountId",
-                    "Types", "CreatedAt", "UpdatedAt", "Severity", "Title", "Resources"):
+        for cle in (
+            "SchemaVersion",
+            "Id",
+            "ProductArn",
+            "GeneratorId",
+            "AwsAccountId",
+            "Types",
+            "CreatedAt",
+            "UpdatedAt",
+            "Severity",
+            "Title",
+            "Resources",
+        ):
             self.assertIn(cle, doc, cle)
 
     def test_severite_normalisee(self):

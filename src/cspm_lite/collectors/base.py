@@ -130,7 +130,6 @@ def collect_all(
             for meta, region in taches
         }
         for futur in as_completed(futurs):
-            meta, region = futurs[futur]
             resources, erreur = futur.result()
             if erreur:
                 inv.errors.append(erreur)
@@ -149,7 +148,7 @@ def _run_one(
     """Execute un collecteur en isolant ses pannes, comme le moteur de checks."""
     try:
         return meta.func(session, region, inv), None
-    except Exception as exc:  # noqa: BLE001 - isolation volontaire
+    except Exception as exc:
         if is_access_denied(exc):
             message = f"{meta.name} ({region}) : droits insuffisants, controles incomplets"
         elif isinstance(exc, ClientError | BotoCoreError):

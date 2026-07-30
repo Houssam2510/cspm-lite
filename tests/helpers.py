@@ -15,8 +15,8 @@ os.environ.setdefault("AWS_ACCESS_KEY_ID", "testing")
 os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "testing")
 os.environ.setdefault("AWS_DEFAULT_REGION", "us-east-1")
 
-from cspm_lite.engine import resource_types as rt  # noqa: E402
-from cspm_lite.engine.models import Inventory, Resource  # noqa: E402
+from cspm_lite.engine import resource_types as rt
+from cspm_lite.engine.models import Inventory, Resource
 
 COMPTE = "111122223333"
 REGION = "eu-west-3"
@@ -56,9 +56,7 @@ def bucket(nom: str = "b", **raw: Any) -> Resource:
         "logging": {"LoggingEnabled": {"TargetBucket": "logs"}},
     }
     base.update(raw)
-    return Resource(
-        id=f"arn:aws:s3:::{nom}", type=rt.S3_BUCKET, region=REGION, name=nom, raw=base
-    )
+    return Resource(id=f"arn:aws:s3:::{nom}", type=rt.S3_BUCKET, region=REGION, name=nom, raw=base)
 
 
 def grant(uri: str | None = None, gtype: str = "Group", perm: str = "READ") -> dict[str, Any]:
@@ -138,8 +136,11 @@ def permission(
     return perm
 
 
-def security_group(nom: str = "web", permissions: list[dict[str, Any]] | None = None,
-                   egress: list[dict[str, Any]] | None = None) -> Resource:
+def security_group(
+    nom: str = "web",
+    permissions: list[dict[str, Any]] | None = None,
+    egress: list[dict[str, Any]] | None = None,
+) -> Resource:
     return Resource(
         id=f"arn:aws:ec2:{REGION}:{COMPTE}:security-group/sg-{nom}",
         type=rt.EC2_SECURITY_GROUP,

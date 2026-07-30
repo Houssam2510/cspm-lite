@@ -91,9 +91,9 @@ class TestCollecteEc2(unittest.TestCase):
         with mock_aws():
             ec2 = boto3.client("ec2", region_name="eu-west-3")
             images = ec2.describe_images()["Images"]
-            instance = ec2.run_instances(
-                ImageId=images[0]["ImageId"], MinCount=1, MaxCount=1
-            )["Instances"][0]
+            instance = ec2.run_instances(ImageId=images[0]["ImageId"], MinCount=1, MaxCount=1)[
+                "Instances"
+            ][0]
             ec2.terminate_instances(InstanceIds=[instance["InstanceId"]])
             session = boto3.Session(region_name="eu-west-3")
             resources = collect_ec2(session, "eu-west-3", Inventory(account_id="123456789012"))

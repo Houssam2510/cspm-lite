@@ -76,9 +76,7 @@ def iam_root_no_access_key(inv: Inventory) -> list[Finding]:
     for user in _users(inv):
         if user.name != ROOT_USER:
             continue
-        actives = [
-            n for n in (1, 2) if to_bool(user.raw.get(f"access_key_{n}_active", "false"))
-        ]
+        actives = [n for n in (1, 2) if to_bool(user.raw.get(f"access_key_{n}_active", "false"))]
         details = f"cles actives : {', '.join(str(n) for n in actives)}" if actives else ""
         return [make_finding("IAM-001", user, not actives, details)]
     return []
@@ -90,8 +88,7 @@ def iam_root_no_access_key(inv: Inventory) -> list[Finding]:
     severity=Severity.CRITICAL,
     service="iam",
     cis="1.5",
-    remediation="Activer un MFA materiel sur le compte root et stocker le peripherique "
-    "hors ligne.",
+    remediation="Activer un MFA materiel sur le compte root et stocker le peripherique hors ligne.",
 )
 def iam_root_mfa(inv: Inventory) -> list[Finding]:
     for user in _users(inv):
@@ -148,15 +145,18 @@ def iam_key_rotation(inv: Inventory) -> list[Finding]:
                         status=Status.NOT_AVAILABLE,
                         resource=user,
                         cis="1.14",
+                        subject=f"access_key_{n}",
                         details=f"access_key_{n} : date de rotation indisponible",
                     )
                 )
                 continue
-            findings.append(
-                make_finding(
-                    "IAM-004", user, age <= MAX_KEY_AGE_DAYS, f"access_key_{n} : {age} jours"
-                )
+            finding = make_finding(
+                "IAM-004", user, age <= MAX_KEY_AGE_DAYS, f"access_key_{n} : {age} jours"
             )
+            # Les deux cles d'un meme utilisateur partagent l'ARN : sans `subject`,
+            # l'historique les confondrait en un seul finding.
+            finding.subject = f"access_key_{n}"
+            findings.append(finding)
     return findings
 
 
@@ -268,7 +268,6 @@ def iam_no_wildcard_policy(inv: Inventory) -> list[Finding]:
             if "*" in actions and "*" in ressources:
                 risque = True
                 break
-        findings.append(
-            make_finding("IAM-008", policy, not risque, "Action '*' sur Resource '*'" if risque else "")
-        )
+        details = "Action '*' sur Resource '*'" if risque else ""
+        findings.append(make_finding("IAM-008", policy, not risque, details))
     return findings

@@ -104,14 +104,17 @@ class TestScanResult(unittest.TestCase):
         self.assertEqual(r.counts_by_severity, {})
 
     def test_score_pondere(self):
-        r = ScanResult("1", [finding(Status.PASS, Severity.LOW),
-                             finding(Status.FAIL, Severity.CRITICAL)])
+        r = ScanResult(
+            "1", [finding(Status.PASS, Severity.LOW), finding(Status.FAIL, Severity.CRITICAL)]
+        )
         self.assertAlmostEqual(r.score, 9.1, places=1)
 
     def test_not_available_ignore(self):
         """Ne pas avoir pu verifier n'est pas un echec."""
-        r = ScanResult("1", [finding(Status.PASS, Severity.HIGH),
-                             finding(Status.NOT_AVAILABLE, Severity.CRITICAL)])
+        r = ScanResult(
+            "1",
+            [finding(Status.PASS, Severity.HIGH), finding(Status.NOT_AVAILABLE, Severity.CRITICAL)],
+        )
         self.assertEqual(r.score, 100.0)
 
     def test_denominateur_nul(self):
@@ -119,20 +122,26 @@ class TestScanResult(unittest.TestCase):
         self.assertEqual(r.score, 100.0)
 
     def test_counts_ordonnes_par_gravite(self):
-        r = ScanResult("1", [
-            finding(Status.FAIL, Severity.LOW),
-            finding(Status.FAIL, Severity.CRITICAL),
-            finding(Status.FAIL, Severity.CRITICAL),
-        ])
+        r = ScanResult(
+            "1",
+            [
+                finding(Status.FAIL, Severity.LOW),
+                finding(Status.FAIL, Severity.CRITICAL),
+                finding(Status.FAIL, Severity.CRITICAL),
+            ],
+        )
         self.assertEqual(list(r.counts_by_severity), ["CRITICAL", "LOW"])
         self.assertEqual(r.counts_by_severity["CRITICAL"], 2)
 
     def test_top_offenders_deterministe(self):
-        r = ScanResult("1", [
-            finding(Status.FAIL, rid="z"),
-            finding(Status.FAIL, rid="a"),
-            finding(Status.FAIL, rid="a"),
-        ])
+        r = ScanResult(
+            "1",
+            [
+                finding(Status.FAIL, rid="z"),
+                finding(Status.FAIL, rid="a"),
+                finding(Status.FAIL, rid="a"),
+            ],
+        )
         self.assertEqual(r.top_offenders(), [("a", 2), ("z", 1)])
 
     def test_to_dict(self):

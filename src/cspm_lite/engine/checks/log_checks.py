@@ -63,7 +63,8 @@ def log_file_validation(inv: Inventory) -> list[Finding]:
     findings = []
     for trail in inv.by_type(rt.CLOUDTRAIL_TRAIL):
         actif = bool(trail.raw.get("LogFileValidationEnabled"))
-        findings.append(make_finding("LOG-002", trail, actif, "" if actif else "validation absente"))
+        details = "" if actif else "validation absente"
+        findings.append(make_finding("LOG-002", trail, actif, details))
     return findings
 
 
@@ -80,7 +81,8 @@ def log_kms_encryption(inv: Inventory) -> list[Finding]:
     findings = []
     for trail in inv.by_type(rt.CLOUDTRAIL_TRAIL):
         cle = trail.raw.get("KmsKeyId")
-        findings.append(make_finding("LOG-003", trail, bool(cle), "" if cle else "chiffrement SSE-S3 par defaut"))
+        details = "" if cle else "chiffrement SSE-S3 par defaut"
+        findings.append(make_finding("LOG-003", trail, bool(cle), details))
     return findings
 
 
@@ -97,9 +99,8 @@ def log_cloudwatch_integration(inv: Inventory) -> list[Finding]:
     findings = []
     for trail in inv.by_type(rt.CLOUDTRAIL_TRAIL):
         groupe = trail.raw.get("CloudWatchLogsLogGroupArn")
-        findings.append(
-            make_finding("LOG-004", trail, bool(groupe), "" if groupe else "aucun groupe CloudWatch")
-        )
+        details = "" if groupe else "aucun groupe CloudWatch"
+        findings.append(make_finding("LOG-004", trail, bool(groupe), details))
     return findings
 
 

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>cspm-lite — historique de posture</title>
+<style>
+.viz {
+  color-scheme: light;
+  --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --series-1: #2a78d6;
+  --good: #006300; --bad: #d03b3b; --ring: rgba(11,11,11,.10);
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) .viz {
+    color-scheme: dark;
+    --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --series-1: #3987e5;
+    --good: #0ca30c; --bad: #d03b3b; --ring: rgba(255,255,255,.10);
+  }
+}
+:root[data-theme="dark"] .viz {
+  color-scheme: dark;
+  --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --series-1: #3987e5;
+  --good: #0ca30c; --bad: #d03b3b; --ring: rgba(255,255,255,.10);
+}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 2rem 1.25rem 4rem; background: var(--surface); color: var(--ink);
+  font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+.wrap { max-width: 900px; margin: 0 auto; }
+h1 { font-size: 1.5rem; margin: 0 0 .2rem; letter-spacing: -.01em; }
+h2 { font-size: 1rem; margin: 2rem 0 .75rem; font-weight: 600; }
+.sub { color: var(--ink-2); font-size: .88rem; margin-bottom: 1.5rem; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .75rem; }
+.tile { border: 1px solid var(--ring); border-radius: 10px; padding: .85rem 1rem; }
+.tile .k { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em;
+  color: var(--muted); }
+.tile .v { font-size: 2rem; font-weight: 650; margin-top: .1rem;
+  font-variant-numeric: tabular-nums; }
+.tile .d { font-size: .8rem; font-weight: 600;
+  font-variant-numeric: tabular-nums; }
+.up { color: var(--good); } .down { color: var(--bad); } .flat { color: var(--muted); }
+figure { margin: 0; }
+figcaption { color: var(--ink-2); font-size: .82rem; margin-top: .5rem; }
+svg { width: 100%; height: auto; display: block; overflow: visible; }
+.gl { stroke: var(--grid); stroke-width: 1; }
+.ax { stroke: var(--axis); stroke-width: 1; }
+.tick { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.line { fill: none; stroke: var(--series-1); stroke-width: 2;
+  stroke-linejoin: round; stroke-linecap: round; }
+.dot { fill: var(--series-1); stroke: var(--surface); stroke-width: 2; }
+.lbl { fill: var(--ink); font-size: 12px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.crosshair { stroke: var(--axis); stroke-width: 1; stroke-dasharray: 3 3; opacity: 0; }
+.hit { fill: transparent; cursor: crosshair; }
+.tip { position: fixed; pointer-events: none; opacity: 0; transition: opacity .1s;
+  background: var(--surface); color: var(--ink); border: 1px solid var(--ring);
+  border-radius: 8px; padding: .45rem .6rem; font-size: .8rem; white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0,0,0,.14); font-variant-numeric: tabular-nums; }
+table { border-collapse: collapse; width: 100%; font-size: .86rem; margin-top: .5rem; }
+th, td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid var(--ring); }
+th { color: var(--ink-2); font-weight: 600; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .85em;
+  word-break: break-all; }
+.empty { color: var(--muted); font-size: .88rem; }
+details { margin-top: .75rem; }
+summary { cursor: pointer; color: var(--ink-2); font-size: .85rem; }
+</style>
+</head>
+<body class="viz">
+<div class="wrap"><h1>Historique de posture</h1><div class="sub">Compte <code>111122223333</code> · 8 scan(s) · dernier le 2026-07-30 12:00</div><div class="tiles"><div class="tile"><div class="k">Score actuel</div><div class="v">85.9</div><div class="d up">▲ +4.0 depuis le scan precedent</div></div><div class="tile"><div class="k">Echecs actifs</div><div class="v">10</div></div><div class="tile"><div class="k">Nouveaux</div><div class="v">0</div></div><div class="tile"><div class="k">Resolus</div><div class="v">2</div></div><div class="tile"><div class="k">Delai moyen de correction</div><div class="v">26.6 j</div></div><div class="tile"><div class="k">Taux de recidive</div><div class="v">6.7 %</div></div></div><h2>Evolution du score de posture</h2><figure><svg id="chart" viewBox="0 0 760 260" role="img" aria-label="Evolution du score de posture" data-points='[{"x": 46.0, "y": 143.2, "score": 39.2, "fail": 24, "date": "2026-06-11 12:00"}, {"x": 144.6, "y": 123.6, "score": 49.2, "fail": 22, "date": "2026-06-18 12:00"}, {"x": 243.1, "y": 103.8, "score": 59.3, "fail": 20, "date": "2026-06-25 12:00"}, {"x": 341.7, "y": 89.1, "score": 66.8, "fail": 18, "date": "2026-07-02 12:00"}, {"x": 440.3, "y": 79.1, "score": 71.9, "fail": 16, "date": "2026-07-09 12:00"}, {"x": 538.9, "y": 79.1, "score": 71.9, "fail": 15, "date": "2026-07-16 12:00"}, {"x": 637.4, "y": 59.5, "score": 81.9, "fail": 12, "date": "2026-07-23 12:00"}, {"x": 736.0, "y": 51.6, "score": 85.9, "fail": 10, "date": "2026-07-30 12:00"}]'><line class="gl" x1="46" y1="220.0" x2="736" y2="220.0"/><text class="tick" x="38" y="224.0" text-anchor="end">0</text><line class="gl" x1="46" y1="171.0" x2="736" y2="171.0"/><text class="tick" x="38" y="175.0" text-anchor="end">25</text><line class="gl" x1="46" y1="122.0" x2="736" y2="122.0"/><text class="tick" x="38" y="126.0" text-anchor="end">50</text><line class="gl" x1="46" y1="73.0" x2="736" y2="73.0"/><text class="tick" x="38" y="77.0" text-anchor="end">75</text><line class="gl" x1="46" y1="24.0" x2="736" y2="24.0"/><text class="tick" x="38" y="28.0" text-anchor="end">100</text><line class="ax" x1="46" y1="220" x2="736" y2="220"/><path class="line" d="M46.0 143.2 L144.6 123.6 L243.1 103.8 L341.7 89.1 L440.3 79.1 L538.9 79.1 L637.4 59.5 L736.0 51.6"/><circle class="dot" cx="46.0" cy="143.2" r="4"/><circle class="dot" cx="144.6" cy="123.6" r="4"/><circle class="dot" cx="243.1" cy="103.8" r="4"/><circle class="dot" cx="341.7" cy="89.1" r="4"/><circle class="dot" cx="440.3" cy="79.1" r="4"/><circle class="dot" cx="538.9" cy="79.1" r="4"/><circle class="dot" cx="637.4" cy="59.5" r="4"/><circle class="dot" cx="736.0" cy="51.6" r="4"/><text class="tick" x="46.0" y="238" text-anchor="start">11/06</text><text class="tick" x="736.0" y="238" text-anchor="end">30/07</text><text class="lbl" x="726.0" y="39.6" text-anchor="end">85.9</text><line id="cross" class="crosshair" x1="0" y1="24" x2="0" y2="220"/><circle id="focus" class="dot" r="6" style="opacity:0" cx="-99" cy="-99"/><rect class="hit" data-i="0" x="46.0" y="24" width="98.6" height="196"/><rect class="hit" data-i="1" x="95.3" y="24" width="98.6" height="196"/><rect class="hit" data-i="2" x="193.8" y="24" width="98.6" height="196"/><rect class="hit" data-i="3" x="292.4" y="24" width="98.6" height="196"/><rect class="hit" data-i="4" x="391.0" y="24" width="98.6" height="196"/><rect class="hit" data-i="5" x="489.6" y="24" width="98.6" height="196"/><rect class="hit" data-i="6" x="588.1" y="24" width="98.6" height="196"/><rect class="hit" data-i="7" x="686.7" y="24" width="98.6" height="196"/></svg><figcaption>Score pondere par severite, de 0 a 100. Survolez la courbe pour le detail d'un scan.</figcaption></figure><details><summary>Vue tableau (valeurs exactes)</summary><table><thead><tr><th>Scan</th><th>Date</th><th>Score</th><th>Conformes</th><th>Echecs</th></tr></thead><tbody><tr><td>#8</td><td>2026-07-30 12:00</td><td class="num">85.9</td><td class="num">28</td><td class="num">10</td></tr><tr><td>#7</td><td>2026-07-23 12:00</td><td class="num">81.9</td><td class="num">26</td><td class="num">12</td></tr><tr><td>#6</td><td>2026-07-16 12:00</td><td class="num">71.9</td><td class="num">23</td><td class="num">15</td></tr><tr><td>#5</td><td>2026-07-09 12:00</td><td class="num">71.9</td><td class="num">22</td><td class="num">16</td></tr><tr><td>#4</td><td>2026-07-02 12:00</td><td class="num">66.8</td><td class="num">20</td><td class="num">18</td></tr><tr><td>#3</td><td>2026-06-25 12:00</td><td class="num">59.3</td><td class="num">18</td><td class="num">20</td></tr><tr><td>#2</td><td>2026-06-18 12:00</td><td class="num">49.2</td><td class="num">16</td><td class="num">22</td></tr><tr><td>#1</td><td>2026-06-11 12:00</td><td class="num">39.2</td><td class="num">14</td><td class="num">24</td></tr></tbody></table></details><h2>Findings resolus</h2><table><thead><tr><th>Check</th><th>Severite</th><th>Ressource</th></tr></thead><tbody><tr><td><code>IAM-005</code></td><td>MEDIUM</td><td><code>arn:aws:iam::111122223333:user/ci-deployer</code></td></tr><tr><td><code>S3-001</code></td><td>HIGH</td><td><code>arn:aws:s3:::acme-public-assets</code></td></tr></tbody></table><h2>Delai de correction par severite</h2><table><thead><tr><th>Severite</th><th>Jours</th></tr></thead><tbody><tr><td>CRITICAL</td><td class='num'>11.67</td></tr><tr><td>HIGH</td><td class='num'>35.0</td></tr><tr><td>MEDIUM</td><td class='num'>49.0</td></tr></tbody></table></div>
+<div id="tip" class="tip"></div>
+<script>
+const svg = document.getElementById('chart');
+if (svg) {
+  const tip = document.getElementById('tip');
+  const cross = document.getElementById('cross');
+  const focus = document.getElementById('focus');
+  const pts = JSON.parse(svg.dataset.points);
+  svg.querySelectorAll('.hit').forEach(r => {
+    const i = Number(r.dataset.i);
+    const show = e => {
+      const p = pts[i];
+      cross.setAttribute('x1', p.x); cross.setAttribute('x2', p.x);
+      cross.style.opacity = 1;
+      focus.setAttribute('cx', p.x); focus.setAttribute('cy', p.y);
+      focus.style.opacity = 1;
+      tip.textContent = `${p.date} — score ${p.score} · ${p.fail} echec(s)`;
+      tip.style.opacity = 1;
+      tip.style.left = Math.min(e.clientX + 14, innerWidth - tip.offsetWidth - 8) + 'px';
+      tip.style.top = (e.clientY - 34) + 'px';
+    };
+    r.addEventListener('mousemove', show);
+    r.addEventListener('mouseenter', show);
+    r.addEventListener('mouseleave', () => {
+      tip.style.opacity = 0; cross.style.opacity = 0; focus.style.opacity = 0;
+    });
+  });
+}
+</script>
+</body>
+</html>

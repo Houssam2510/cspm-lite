@@ -70,9 +70,7 @@ def collect_iam(session: Session, region: str, inv: Inventory) -> list[Resource]
                 raw["attached_policies"] = _policies_attachees(client, nom)
             except ClientError:
                 raw["attached_policies"] = []
-        resources.append(
-            Resource(id=arn, type=rt.IAM_USER, region="global", name=nom, raw=raw)
-        )
+        resources.append(Resource(id=arn, type=rt.IAM_USER, region="global", name=nom, raw=raw))
 
     # Politique de mot de passe : absente si jamais configuree, ce qui est en soi un
     # constat (le check IAM-006 le traite), pas une panne.

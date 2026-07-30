@@ -299,3 +299,62 @@ def build_demo_inventory() -> Inventory:
     )
 
     return inv
+
+
+def seed_demo_history(db_path: str, scans: int = 8) -> int:
+    """Fabrique un historique de demonstration dans une base SQLite.
+
+    La commande `history` n'a d'interet qu'avec plusieurs scans espaces dans le
+    temps. Plutot que d'attendre des semaines pour la decouvrir, cette fonction
+    simule une equipe qui corrige progressivement sa posture - avec une regression
+    volontaire au milieu, pour que le taux de recidive ne soit pas artificiellement
+    nul.
+
+    Renvoie le nombre de scans ecrits.
+    """
+    import copy
+    from datetime import timedelta
+
+    from cspm_lite.engine.models import ScanResult, Status
+    from cspm_lite.engine.registry import load_all_checks, run_checks
+    from cspm_lite.history import save_scan
+
+    load_all_checks()
+    base = run_checks(build_demo_inventory())
+    echecs = [f.key for f in base if f.status is Status.FAIL]
+    # On corrige environ deux findings par scan, du plus grave au moins grave.
+    ordre = [
+        k
+        for k in sorted(
+            echecs,
+            key=lambda k: -next(f.severity.weight for f in base if f.key == k),
+        )
+    ]
+
+    ecrits = 0
+    for i in range(scans):
+        corriges = set(ordre[: min(len(ordre), i * 2)])
+        # Regression volontaire : au scan 5, un finding deja corrige reapparait.
+        if i == 5 and ordre:
+            corriges.discard(ordre[0])
+
+        findings = []
+        for f in base:
+            copie = copy.copy(f)
+            copie.resource = f.resource
+            if copie.key in corriges and copie.status is Status.FAIL:
+                copie.status = Status.PASS
+                copie.details = ""
+            findings.append(copie)
+
+        debut = _MAINTENANT - timedelta(days=7 * (scans - 1 - i))
+        resultat = ScanResult(
+            account_id=COMPTE,
+            findings=findings,
+            regions=[REGION],
+            started_at=debut,
+            finished_at=debut + timedelta(seconds=12),
+        )
+        save_scan(db_path, resultat)
+        ecrits += 1
+    return ecrits

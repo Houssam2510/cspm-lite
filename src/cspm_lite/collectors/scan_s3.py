@@ -68,7 +68,7 @@ def collect_s3(session: Session, region: str, inv: Inventory) -> list[Resource]:
     def traiter(nom: str) -> Resource | None:
         try:
             return _detail_bucket(session, nom, _region_du_bucket(client, nom))
-        except Exception as exc:  # noqa: BLE001 - un bucket illisible n'annule pas les autres
+        except Exception as exc:
             inv.errors.append(f"s3 : bucket {nom} ignore ({type(exc).__name__})")
             return None
 

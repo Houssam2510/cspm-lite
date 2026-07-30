@@ -95,6 +95,20 @@ class Finding:
     cis: str = ""
     references: list[str] = field(default_factory=list)
     detected_at: datetime = field(default_factory=lambda: datetime.now(UTC))
+    #: Sous-objet du controle quand une meme ressource en porte plusieurs
+    #: (les deux cles d'acces d'un utilisateur IAM, par exemple). Sans lui, deux
+    #: findings distincts partageraient la meme identite et l'historique les
+    #: confondrait.
+    subject: str = ""
+    #: Exclusion documentee via .cspm.toml : le finding reste visible mais ne
+    #: compte ni dans le score ni dans le code de sortie.
+    suppressed: bool = False
+    suppression_reason: str = ""
+
+    @property
+    def key(self) -> tuple[str, str, str]:
+        """Identite stable d'un finding a travers les scans successifs."""
+        return (self.check_id, self.resource.id, self.subject)
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -103,11 +117,14 @@ class Finding:
             "severity": self.severity.name,
             "status": self.status.value,
             "resource": self.resource.to_dict(),
+            "subject": self.subject,
             "remediation": self.remediation,
             "details": self.details,
             "cis": self.cis,
             "references": list(self.references),
             "detected_at": self.detected_at.isoformat(),
+            "suppressed": self.suppressed,
+            "suppression_reason": self.suppression_reason,
         }
 
 
@@ -163,11 +180,18 @@ class ScanResult:
 
     @property
     def failed(self) -> list[Finding]:
-        return [f for f in self.findings if f.status is Status.FAIL]
+        """Echecs actifs. Les findings explicitement exclus en sont retires : ils
+        restent visibles dans le rapport mais ne pesent ni sur le score ni sur le
+        code de sortie."""
+        return [f for f in self.findings if f.status is Status.FAIL and not f.suppressed]
+
+    @property
+    def suppressed(self) -> list[Finding]:
+        return [f for f in self.findings if f.suppressed]
 
     @property
     def passed(self) -> list[Finding]:
-        return [f for f in self.findings if f.status is Status.PASS]
+        return [f for f in self.findings if f.status is Status.PASS and not f.suppressed]
 
     @property
     def counts_by_severity(self) -> dict[str, int]:
@@ -227,6 +251,7 @@ class ScanResult:
                 "total": len(self.findings),
                 "pass": len(self.passed),
                 "fail": len(self.failed),
+                "suppressed": len(self.suppressed),
                 "score": self.score,
                 "pass_rate": self.pass_rate,
                 "by_severity": self.counts_by_severity,

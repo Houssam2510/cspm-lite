@@ -23,7 +23,9 @@ PAB_FLAGS = (
     "RestrictPublicBuckets",
 )
 
-DOC_S3_PUBLIC = "https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html"
+DOC_S3_PUBLIC = (
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html"
+)
 
 
 # --------------------------------------------------------------------------- #
@@ -188,10 +190,10 @@ def s3_encryption(inv: Inventory) -> list[Finding]:
         config = bucket.raw.get("encryption") or {}
         regles = config.get("Rules", [])
         algos = [
-            (r.get("ApplyServerSideEncryptionByDefault") or {}).get("SSEAlgorithm")
-            for r in regles
+            str(algo)
+            for regle in regles
+            if (algo := (regle.get("ApplyServerSideEncryptionByDefault") or {}).get("SSEAlgorithm"))
         ]
-        algos = [a for a in algos if a]
         findings.append(
             make_finding("S3-003", bucket, bool(algos), ", ".join(algos) if algos else "aucun")
         )

@@ -41,7 +41,8 @@ def render_markdown(result: ScanResult) -> str:
         groupe = [f for f in result.failed if f.severity is severite]
         if not groupe:
             continue
-        lignes += [f"<details open>", f"<summary><b>{severite.name}</b> — {len(groupe)}</summary>", ""]
+        titre = f"<summary><b>{severite.name}</b> — {len(groupe)}</summary>"
+        lignes += ["<details open>", titre, ""]
         for f in groupe:
             cis = f" · CIS {f.cis}" if f.cis else ""
             lignes.append(f"- **{f.check_id}**{cis} — {_echapper(f.title)} — `{f.resource.id}`")

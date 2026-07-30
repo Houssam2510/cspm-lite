@@ -41,9 +41,12 @@ un référentiel reconnu ?*
                     v
              reporters/            json / markdown / html / asff
              (LOAD)
+                    |
+                    v
+             history.py            SQLite : tendance, diff, MTTR, recidive
                     ^
                     |
-             cli.py                Typer + Rich, exit codes pour la CI
+             cli.py                argparse, .cspm.toml, exit codes pour la CI
 ```
 
 Collecte et évaluation sont **séparées** : les collectors ne savent rien de la
@@ -94,7 +97,49 @@ cspm-lite scan --format html -o rapport.html
 cspm-lite scan --service s3 --severity-min HIGH
 cspm-lite scan --role-arn arn:aws:iam::123:role/scanner --external-id xyz
 cspm-lite scan --format asff -o findings.json   # export AWS Security Hub
+
+cspm-lite init-config                      # ecrire un .cspm.toml d'exemple
+cspm-lite scan --save-to posture.db        # historiser le scan
+cspm-lite history --db posture.db          # tendance, diff, MTTR, recidive
+cspm-lite history --db demo.db --seed-demo --format html -o tendance.html
 ```
+
+## Configuration et exclusions
+
+Un fichier `.cspm.toml` (cherché en remontant les dossiers, comme `git`) :
+
+```toml
+[scan]
+severity_min = "LOW"
+fail_on      = "HIGH"
+
+[[exclusions]]
+check      = "S3-005"
+resource   = "arn:aws:s3:::acme-public-assets"
+reason     = "bucket de contenus publics : la journalisation d'acces est assumee"
+expires_at = 2026-12-31
+owner      = "equipe-web"
+```
+
+`reason` et `expires_at` sont **obligatoires** : une exception de sécurité sans date
+devient permanente et personne ne se souvient pourquoi elle existe. Passée sa date,
+l'exclusion cesse de s'appliquer et le finding redevient bloquant. Un finding exclu
+reste visible dans le rapport mais sort du score et du code de sortie.
+
+## Suivi dans le temps
+
+```bash
+cspm-lite scan --save-to posture.db --fail-on NONE   # a chaque exécution
+cspm-lite history --db posture.db --format html -o tendance.html
+```
+
+Produit la courbe du score, le diff avec le scan précédent (nouveaux / résolus /
+persistants), le **délai moyen de correction** par sévérité et le **taux de
+récidive**. Exemple : [`docs/example-history.html`](docs/example-history.html).
+
+On ne pilote pas la sécurité au nombre brut de vulnérabilités — ce chiffre dépend
+surtout du périmètre scanné. On la pilote au délai de correction et au taux de
+récidive, qui mesurent le processus.
 
 **Codes de sortie**, le contrat avec une CI :
 
@@ -135,7 +180,7 @@ pytest                                              # avec les dépendances de d
 cd tests && PYTHONPATH=../src python3 -m unittest   # sans rien installer
 ```
 
-177 tests. Les tests de collecteurs utilisent `moto` et se sautent proprement si les
+217 tests. Les tests de collecteurs utilisent `moto` et se sautent proprement si les
 dépendances de dev sont absentes.
 
 ## État d'avancement
@@ -149,12 +194,29 @@ dépendances de dev sont absentes.
 - [x] Phase 6 — Labo Terraform vulnérable
 - [x] Phase 7 — Tests
 - [x] Phase 8 — CI/CD et Docker
-- [ ] Phase 9 — Historisation et métriques de posture
-- [ ] Phase 10 — Finition et release v1.0.0
+- [x] Phase 9 — Historisation et métriques de posture
+- [x] Phase 10 — Documentation, ADR, gouvernance
 
-Limites assumées à ce stade : pas d'analyse de chemins d'attaque, pas de contexte
-métier donc pas de priorisation réelle, un instantané et non de la détection temps
-réel, un seul fournisseur cloud.
+## Documentation
+
+- [Décisions d'architecture (ADR)](docs/adr/) — le *pourquoi* de chaque choix
+- [Catalogue des contrôles](docs/CHECKS.md)
+- [Contribuer](CONTRIBUTING.md) · [Politique de sécurité](SECURITY.md) · [Changelog](CHANGELOG.md)
+- [Guide d'apprentissage complet](learning/) — roadmap, concepts, exercices
+
+## Limites connues
+
+Énoncées volontairement, parce qu'un outil de sécurité dont on ignore les angles
+morts est plus dangereux que pas d'outil :
+
+- **Pas d'analyse de chemins d'attaque.** Les findings sont isolés ; l'outil ne dit
+  pas quel chemin relie une exposition externe à une donnée sensible.
+- **Pas de contexte métier**, donc pas de priorisation réelle. Un bucket de logs
+  publics est un faux positif que l'outil ne sait pas distinguer.
+- **Instantané**, pas de détection temps réel. Le volet CloudTrail événementiel
+  serait la suite logique.
+- **AWS uniquement**, et les contrôles ne sont pas transposables tels quels.
+- **Mono-compte** : pas de support AWS Organizations.
 
 ## Guide d'apprentissage
 

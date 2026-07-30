@@ -52,6 +52,10 @@ source = ["src/cspm_lite"]
 line-length = 100
 target-version = "py311"
 src = ["src", "tests"]
+# learning/ contient du materiel pedagogique : des squelettes volontairement
+# incomplets et un generateur de PDF autonome. Les reformater casserait les
+# exercices et n'apporterait rien.
+extend-exclude = ["learning"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "N", "UP", "B", "SIM", "RUF"]

@@ -79,28 +79,32 @@ class TestScanDemo(unittest.TestCase):
         self.assertGreater(len(data["findings"]), 20)
 
     def test_filtre_service(self):
-        _, out, _ = lancer("scan", "--demo", "--service", "s3", "--format", "json",
-                           "--fail-on", "NONE")
+        _, out, _ = lancer(
+            "scan", "--demo", "--service", "s3", "--format", "json", "--fail-on", "NONE"
+        )
         ids = {f["check_id"] for f in json.loads(out)["findings"]}
         self.assertTrue(all(i.startswith("S3-") for i in ids), ids)
 
     def test_filtre_check(self):
-        _, out, _ = lancer("scan", "--demo", "--check", "S3-002", "--format", "json",
-                           "--fail-on", "NONE")
+        _, out, _ = lancer(
+            "scan", "--demo", "--check", "S3-002", "--format", "json", "--fail-on", "NONE"
+        )
         ids = {f["check_id"] for f in json.loads(out)["findings"]}
         self.assertEqual(ids, {"S3-002"})
 
     def test_severity_min(self):
-        _, out, _ = lancer("scan", "--demo", "--severity-min", "CRITICAL", "--format", "json",
-                           "--fail-on", "NONE")
+        _, out, _ = lancer(
+            "scan", "--demo", "--severity-min", "CRITICAL", "--format", "json", "--fail-on", "NONE"
+        )
         severites = {f["severity"] for f in json.loads(out)["findings"]}
         self.assertEqual(severites, {"CRITICAL"})
 
     def test_ecriture_fichier(self):
         with tempfile.TemporaryDirectory() as tmp:
             chemin = Path(tmp) / "sous-dossier" / "rapport.html"
-            code, _, err = lancer("scan", "--demo", "--format", "html", "-o", str(chemin),
-                                  "--fail-on", "NONE")
+            code, _, err = lancer(
+                "scan", "--demo", "--format", "html", "-o", str(chemin), "--fail-on", "NONE"
+            )
             self.assertEqual(code, EXIT_OK)
             self.assertTrue(chemin.exists(), "le dossier parent doit etre cree")
             self.assertIn("<!doctype html>", chemin.read_text(encoding="utf-8"))
