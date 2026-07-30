@@ -1,0 +1,1246 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Pages /Count 7 /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R] >>
+endobj
+6 0 obj
+<< /Length 1006 >>
+stream
+q 0.090 0.260 0.480 rg 0.00 641.89 595.28 200.00 re f Q
+BT 1.000 1.000 1.000 rg /F2 27 Tf 56.00 736.89 Td (cspm-lite) Tj ET
+BT 0.850 0.890 0.950 rg /F1 12.5 Tf 56.00 700.89 Td (Fiche d'entretien : ce que le projet fait, et ce qu'il faut savoir expliquer) Tj ET
+BT 0.110 0.120 0.140 rg /F1 10.5 Tf 56.00 576.89 Td (Synthese a relire avant un entretien technique. Tout ce qui est affirme ici est verifiable dans le depot.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 10.5 Tf 56.00 557.89 Td (25 controles CIS · 217 tests · 87 % de couverture · 1 dependance runtime.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 10.5 Tf 56.00 538.89 Td (Genere le 2026-07-30.) Tj ET
+q 0.800 0.820 0.860 RG 0.7 w 56.00 84.00 m 539.28 84.00 l S Q
+BT 0.420 0.450 0.500 rg /F1 9 Tf 56.00 68.00 Td (cspm-lite - guide d'apprentissage) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 42.00 m 539.28 42.00 l S Q
+BT 0.420 0.450 0.500 rg /F1 8 Tf 56.00 30.00 Td (cspm-lite - fiche d'entretien) Tj ET
+BT 0.420 0.450 0.500 rg /F1 8 Tf 523.71 30.00 Td (1 / 7) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 2582 >>
+stream
+BT 0.090 0.260 0.480 rg /F2 18.5 Tf 56.00 755.89 Td (Table des matieres) Tj ET
+q 0.090 0.260 0.480 RG 1.2 w 56.00 747.89 m 539.28 747.89 l S Q
+BT 0.110 0.120 0.140 rg /F2 10.2 Tf 56.00 718.89 Td (9. Fiche d'entretien — cspm-lite) Tj ET
+q 0.850 0.860 0.890 RG 0.5 w 208.68 721.39 m 529.61 721.39 l S Q
+BT 0.110 0.120 0.140 rg /F2 10.2 Tf 533.61 718.89 Td (3) Tj ET
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 72.00 705.89 Td (9.1 Les chiffres, vérifiés) Tj ET
+q 0.850 0.860 0.890 RG 0.5 w 172.64 708.39 m 530.16 708.39 l S Q
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 534.16 705.89 Td (3) Tj ET
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 72.00 692.89 Td (9.2 Ce que le projet fait, en une page) Tj ET
+q 0.850 0.860 0.890 RG 0.5 w 227.39 695.39 m 530.16 695.39 l S Q
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 534.16 692.89 Td (3) Tj ET
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 72.00 679.89 Td (9.3 Les six décisions à savoir défendre) Tj ET
+q 0.850 0.860 0.890 RG 0.5 w 234.52 682.39 m 530.16 682.39 l S Q
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 534.16 679.89 Td (4) Tj ET
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 72.00 666.89 Td (9.4 Les six pièges de sécurité implémentés) Tj ET
+q 0.850 0.860 0.890 RG 0.5 w 251.89 669.39 m 530.16 669.39 l S Q
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 534.16 666.89 Td (5) Tj ET
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 72.00 653.89 Td (9.5 Cinq histoires prêtes à raconter) Tj ET
+q 0.850 0.860 0.890 RG 0.5 w 219.17 656.39 m 530.16 656.39 l S Q
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 534.16 653.89 Td (5) Tj ET
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 72.00 640.89 Td (9.6 Les questions de relance et leurs réponses) Tj ET
+q 0.850 0.860 0.890 RG 0.5 w 266.74 643.39 m 530.16 643.39 l S Q
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 534.16 640.89 Td (6) Tj ET
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 72.00 627.89 Td (9.7 Le socle de connaissances à réviser) Tj ET
+q 0.850 0.860 0.890 RG 0.5 w 239.63 630.39 m 530.16 630.39 l S Q
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 534.16 627.89 Td (6) Tj ET
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 72.00 614.89 Td (9.8 Ce qu'il ne faut pas faire) Tj ET
+q 0.850 0.860 0.890 RG 0.5 w 190.26 617.39 m 530.16 617.39 l S Q
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 534.16 614.89 Td (7) Tj ET
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 72.00 601.89 Td (9.9 La veille de l'entretien) Tj ET
+q 0.850 0.860 0.890 RG 0.5 w 180.03 604.39 m 530.16 604.39 l S Q
+BT 0.420 0.450 0.500 rg /F1 9.2 Tf 534.16 601.89 Td (7) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 42.00 m 539.28 42.00 l S Q
+BT 0.420 0.450 0.500 rg /F1 8 Tf 56.00 30.00 Td (cspm-lite - fiche d'entretien) Tj ET
+BT 0.420 0.450 0.500 rg /F1 8 Tf 523.71 30.00 Td (2 / 7) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 9825 >>
+stream
+BT 0.090 0.260 0.480 rg /F2 18.5 Tf 56.00 734.39 Td (9. Fiche d'entretien — cspm-lite) Tj ET
+q 0.090 0.260 0.480 RG 1.2 w 56.00 728.39 m 539.28 728.39 l S Q
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 705.99 Td (Ce document est la synthèse à relire avant un entretien. Il répond à deux questions : ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 417.26 705.99 Td (ce) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 427.93 705.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 430.60 705.99 Td (que) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 447.67 705.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 450.34 705.99 Td (le) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 458.35 705.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 461.01 705.99 Td (projet) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 487.68 705.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 490.35 705.99 Td (fait) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 692.59 Td (réellement) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 104.02 692.59 Td (, et ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 120.03 692.59 Td (ce) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 130.71 692.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 133.38 692.59 Td (qu'il) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 152.73 692.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 155.40 692.59 Td (faut) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 173.00 692.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 175.66 692.59 Td (savoir) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 203.95 692.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 206.61 692.59 Td (expliquer) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 249.30 692.59 Td (.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 673.19 Td (Tout ce qui est affirmé ici est vérifiable dans le dépôt. N'affirmez rien d'autre.) Tj ET
+q 0.800 0.820 0.860 RG 0.7 w 56.00 662.19 m 539.28 662.19 l S Q
+BT 0.090 0.260 0.480 rg /F2 13.5 Tf 56.00 623.69 Td (9.1 Les chiffres, vérifiés) Tj ET
+q 0.920 0.940 0.970 rg 56.00 597.49 483.28 17.20 re f Q
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 61.00 601.49 Td (Élément) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 222.14 601.49 Td (Valeur) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 597.49 m 539.28 597.49 l S Q
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 61.00 584.29 Td (Contrôles de sécurité) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 222.14 584.29 Td (25) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 231.37 584.29 Td ( \(6 S3, 8 IAM, 6 réseau, 5 CloudTrail\), mappés CIS AWS v3.0) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 580.29 m 539.28 580.29 l S Q
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 61.00 567.09 Td (Tests) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 222.14 567.09 Td (217) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 235.99 567.09 Td (, dont 7 d'intégration avec ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 8.3 Tf 333.08 567.09 Td (moto) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 563.09 m 539.28 563.09 l S Q
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 61.00 549.89 Td (Couverture) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 222.14 549.89 Td (87) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 231.37 549.89 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 233.68 549.89 Td (%) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 545.89 m 539.28 545.89 l S Q
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 61.00 532.69 Td (Dépendance runtime) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 222.14 532.69 Td (1) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 226.76 532.69 Td ( — ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 8.3 Tf 235.99 532.69 Td (boto3) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 528.69 m 539.28 528.69 l S Q
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 61.00 515.49 Td (Formats de sortie) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 222.14 515.49 Td (4 — JSON, Markdown, HTML, ASFF \(AWS Security Hub\)) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 511.49 m 539.28 511.49 l S Q
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 61.00 498.29 Td (Lignes de code source) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 222.14 498.29 Td (~1 540) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 494.29 m 539.28 494.29 l S Q
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 61.00 481.09 Td (Qualité) Tj ET
+BT 0.110 0.120 0.140 rg /F3 8.3 Tf 222.14 481.09 Td (ruff) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 242.06 481.09 Td (, ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 8.3 Tf 246.68 481.09 Td (ruff) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 266.60 481.09 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 8.3 Tf 268.90 481.09 Td (format) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 298.78 481.09 Td (, ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 8.3 Tf 303.40 481.09 Td (mypy) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 323.32 481.09 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 8.3 Tf 325.63 481.09 Td (--strict) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 365.47 481.09 Td ( : zéro erreur) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 477.09 m 539.28 477.09 l S Q
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 61.00 463.89 Td (Décisions documentées) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 222.14 463.89 Td (6 ADR) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 459.89 m 539.28 459.89 l S Q
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 435.49 Td (Fait) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 73.07 435.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 75.74 435.49 Td (remarquable) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 133.36 435.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 136.03 435.49 Td (à) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 141.36 435.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 144.03 435.49 Td (citer) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 164.31 435.49 Td ( : la suite complète tourne aussi avec la seule bibliothèque standard \() Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 458.32 435.49 Td (python) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 492.88 435.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 495.55 435.49 Td (-m) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 56.00 422.09 Td (unittest) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 102.08 422.09 Td (\), sans rien installer.) Tj ET
+q 0.800 0.820 0.860 RG 0.7 w 56.00 411.09 m 539.28 411.09 l S Q
+BT 0.090 0.260 0.480 rg /F2 13.5 Tf 56.00 372.59 Td (9.2 Ce que le projet fait, en une page) Tj ET
+q 0.955 0.957 0.965 rg 56.00 102.59 483.28 261.00 re f Q
+q 0.090 0.260 0.480 RG 1.6 w 56.00 102.59 m 56.00 363.59 l S Q
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 348.59 Td (   API AWS  <??  auth.py         session boto3, profils, AssumeRole + ExternalId) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 337.59 Td (   \(boto3\)         ?) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 326.59 Td (                   ?) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 315.59 Td (             collectors/         S3, IAM, EC2/VPC, CloudTrail) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 304.59 Td (             \(EXTRACT\)           pagination, multi-région parallélisée,) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 293.59 Td (                   ?             AccessDenied géré, erreurs "non configuré" absorbées) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 282.59 Td (                   ?) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 271.59 Td (             Inventory           ??? LA FRONTIÈRE. En amont : boto3.) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 260.59 Td (             \(modèle pur\)            En aval : zéro dépendance cloud.) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 249.59 Td (                   ?) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 238.59 Td (                   ?) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 227.59 Td (             engine/checks/      25 fonctions pures \(Inventory\) -> list[Finding]) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 216.59 Td (             engine/registry     registre par décorateur, isolation des pannes) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 205.59 Td (                   ?) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 194.59 Td (                   ?) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 183.59 Td (             config.py           exclusions datées et justifiées) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 172.59 Td (                   ?) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 161.59 Td (                   ?) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 150.59 Td (             reporters/          json · markdown · html · asff) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 139.59 Td (             history.py          SQLite : tendance, diff, MTTR, récidive) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 128.59 Td (                   ?) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 117.59 Td (                   ?) Tj ET
+BT 0.160 0.180 0.220 rg /F3 8.2 Tf 65.00 106.59 Td (             cli.py              argparse · exit codes 0/1/2 pour la CI) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 81.19 Td (Le) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 67.20 81.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 69.87 81.19 Td (mode) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 95.48 81.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 98.14 81.19 Td (démo) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 123.75 81.19 Td ( : ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 131.75 81.19 Td (cspm-lite) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 183.59 81.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 186.26 81.19 Td (scan) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 209.30 81.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 211.97 81.19 Td (--demo) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 246.53 81.19 Td ( produit un rapport complet sans compte AWS, sans credentials,) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 67.79 Td (sans installation. C'est ce qui rend le projet montrable en 30 secondes.) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 42.00 m 539.28 42.00 l S Q
+BT 0.420 0.450 0.500 rg /F1 8 Tf 56.00 30.00 Td (cspm-lite - fiche d'entretien) Tj ET
+BT 0.420 0.450 0.500 rg /F1 8 Tf 523.71 30.00 Td (3 / 7) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 9785 >>
+stream
+q 0.800 0.820 0.860 RG 0.7 w 56.00 769.89 m 539.28 769.89 l S Q
+BT 0.090 0.260 0.480 rg /F2 13.5 Tf 56.00 731.39 Td (9.3 Les six décisions à savoir défendre) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 709.99 Td (Chacune a son ADR dans ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 169.65 709.99 Td (docs/adr/) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 221.49 709.99 Td (. En entretien, annoncez la décision, ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 378.92 709.99 Td (puis) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 398.65 709.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 401.32 709.99 Td (le) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 409.33 709.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 412.00 709.99 Td (compromis) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 463.74 709.99 Td ( — c'est le) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 696.59 Td (compromis qui prouve que vous avez réfléchi.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 11.0 Tf 56.00 668.59 Td (1. Séparer collecte et évaluation \(ADR-001\)) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 648.69 Td (Les collecteurs ne connaissent pas la sécurité, les checks ne connaissent pas ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 390.02 648.69 Td (boto3) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 418.82 648.69 Td (. ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 424.16 648.69 Td (Inventory) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 476.00 648.69 Td ( est la) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 635.29 Td (frontière.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 615.89 Td (Gain) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 77.34 615.89 Td ( : les 25 contrôles se testent en 0,05 s sans réseau ni mock, avec des inventaires fabriqués à la main qui) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 602.49 Td (couvrent tous les cas limites. Ajouter un contrôle est une fonction décorée.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 583.09 Td (Coût) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 77.86 583.09 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 80.53 583.09 Td (assumé) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 116.28 583.09 Td ( : l'inventaire est chargé entièrement en mémoire ; sur un compte de dizaines de milliers de) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 569.69 Td (ressources il faudrait passer en flux. Un check ne peut pas déclencher un appel API au vol.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 11.0 Tf 56.00 541.69 Td (2. Une seule dépendance runtime \(ADR-002\)) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 56.00 521.79 Td (argparse) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 102.08 521.79 Td ( plutôt que Typer, ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 179.46 521.79 Td (dataclasses) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 242.82 521.79 Td ( plutôt que pydantic, ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 331.40 521.79 Td (tomllib) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 371.72 521.79 Td ( plutôt que PyYAML, f-strings plutôt) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 508.39 Td (que Jinja.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 488.99 Td (Raison) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 88.01 488.99 Td ( : pour un outil de sécurité, chaque dépendance est une surface d'attaque de la chaîne) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 475.59 Td (d'approvisionnement.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 456.19 Td (Coût) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 77.86 456.19 Td ( : sortie terminal moins jolie, échappement HTML à notre charge — d'où un test dédié à l'injection XSS.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 436.79 Td (Détail) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 82.14 436.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 84.81 436.79 Td (qui) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 99.21 436.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 101.88 436.79 Td (porte) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 125.88 436.79 Td ( : TOML plutôt que YAML parce que l'analyseur YAML a un historique de failles d'exécution de) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 423.39 Td (code à la désérialisation.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 11.0 Tf 56.00 395.39 Td (3. Isoler les pannes de checks \(ADR-003\)) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 375.49 Td (Un check qui lève une exception produit un finding ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 273.18 375.49 Td (NOT_AVAILABLE) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 348.06 375.49 Td ( et le scan continue.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 356.09 Td (Raison) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 88.01 356.09 Td ( : en production un bucket sera supprimé pendant le scan, un champ d'API sera renommé. Sans isolation,) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 342.69 Td (l'utilisateur n'obtient aucun résultat — y compris pour les 24 contrôles qui marchaient.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 323.29 Td (Subtilité) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 93.87 323.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 96.54 323.29 Td (à) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 101.88 323.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 104.55 323.29 Td (mentionner) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 156.82 323.29 Td ( : on capture ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 212.85 323.29 Td (Exception) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 264.69 323.29 Td (, pas ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 288.18 323.29 Td (BaseException) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 363.06 323.29 Td (. Un Ctrl+C doit interrompre le scan. Un) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 309.89 Td (test le vérifie explicitement.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 11.0 Tf 56.00 281.89 Td (4. Score pondéré par sévérité \(ADR-004\)) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 56.00 261.99 Td (score) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 84.80 261.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 87.47 261.99 Td (=) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 93.23 261.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 95.90 261.99 Td (100) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 113.18 261.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 115.85 261.99 Td (×) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 121.61 261.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 124.28 261.99 Td (?\(poids) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 164.60 261.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 167.26 261.99 Td (des) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 184.54 261.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 187.21 261.99 Td (PASS\)) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 216.01 261.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 218.68 261.99 Td (/) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 224.44 261.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 227.11 261.99 Td (?\(poids) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 267.43 261.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 270.10 261.99 Td (des) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 287.38 261.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 290.05 261.99 Td (PASS) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 313.09 261.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 315.76 261.99 Td (et) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 327.28 261.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 329.95 261.99 Td (FAIL\)) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 358.75 261.99 Td (, avec CRITICAL=10, HIGH=5,) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 248.59 Td (MEDIUM=3, LOW=1.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 229.19 Td (Raison) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 88.01 229.19 Td ( : un taux de conformité brut laisse dix contrôles informatifs compenser un bucket public.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 209.79 Td (Limite) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 84.27 209.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 86.94 209.79 Td (à) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 92.28 209.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 94.95 209.79 Td (énoncer) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 132.29 209.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 134.96 209.79 Td (d'emblée) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 176.19 209.79 Td ( : les poids sont arbitraires ; le score est comparable dans le temps sur un même) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 196.39 Td (compte, pas entre deux comptes de tailles différentes.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 11.0 Tf 56.00 168.39 Td (5. Exclusions datées et justifiées \(ADR-005\)) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 56.00 148.49 Td (reason) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 90.56 148.49 Td ( et ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 103.90 148.49 Td (expires_at) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 161.50 148.49 Td ( sont obligatoires ; leur absence est une erreur fatale. Passée la date, le finding) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 135.09 Td (redevient bloquant.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 115.69 Td (Raison) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 88.01 115.69 Td ( : une exclusion est une acceptation de risque. Sans date, elle devient permanente et personne ne se) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 102.29 Td (souvient pourquoi elle existe.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 82.89 Td (À) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 62.93 82.89 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 65.60 82.89 Td (assumer) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 105.08 82.89 Td ( : c'est plus contraignant que la concurrence. La friction est ici le produit, pas un défaut.) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 42.00 m 539.28 42.00 l S Q
+BT 0.420 0.450 0.500 rg /F1 8 Tf 56.00 30.00 Td (cspm-lite - fiche d'entretien) Tj ET
+BT 0.420 0.450 0.500 rg /F1 8 Tf 523.71 30.00 Td (4 / 7) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 25604 >>
+stream
+BT 0.110 0.120 0.140 rg /F2 11.0 Tf 56.00 763.89 Td (6. Pas d'action GitHub pour les outils de sécurité \(ADR-006\)) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 743.99 Td (Trivy et Syft tournent depuis leur image officielle épinglée, pas via leur action.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 724.59 Td (Origine) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 89.61 724.59 Td ( : un vrai échec de CI. ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 185.66 724.59 Td (trivy-action) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 254.78 724.59 Td (, épinglée par SHA, résout en interne ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 415.40 724.59 Td (setup-trivy@v0.2.2) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 519.08 724.59 Td ( —) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 711.19 Td (un tag disparu en amont. Le pipeline est tombé sans qu'une ligne de notre code ait changé.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 691.79 Td (La) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 67.20 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 69.87 691.79 Td (leçon,) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 97.62 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 100.28 691.79 Td (et) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 108.82 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 111.49 691.79 Td (c'est) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 132.98 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 135.65 691.79 Td (la) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 143.66 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 146.33 691.79 Td (meilleure) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 188.48 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 191.15 691.79 Td (de) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 202.35 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 205.02 691.79 Td (tout) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 223.15 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 225.81 691.79 Td (le) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 233.82 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 236.49 691.79 Td (projet) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 263.16 691.79 Td ( : ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 271.16 691.79 Td (l'épinglage) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 316.76 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 319.42 691.79 Td (par) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 333.30 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 335.96 691.79 Td (SHA) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 355.70 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 358.37 691.79 Td (ne) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 369.05 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 371.72 691.79 Td (protège) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 404.27 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 406.94 691.79 Td (qu'à) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 424.78 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 427.45 691.79 Td (la) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 434.92 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 437.59 691.79 Td (profondeur) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 484.02 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 486.68 691.79 Td (où) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 497.36 691.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 500.03 691.79 Td (on) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 56.00 678.39 Td (l'applique.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 98.92 678.39 Td ( La surface d'attaque réelle est tout l'arbre transitif.) Tj ET
+q 0.800 0.820 0.860 RG 0.7 w 56.00 667.39 m 539.28 667.39 l S Q
+BT 0.090 0.260 0.480 rg /F2 13.5 Tf 56.00 628.89 Td (9.4 Les six pièges de sécurité implémentés) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 607.49 Td (Ce sont vos preuves de compréhension du domaine. Chacun est couvert par un test.) Tj ET
+q 0.920 0.940 0.970 rg 56.00 583.29 483.28 17.20 re f Q
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 61.00 587.29 Td (Piège) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 164.03 587.29 Td (Ce que la plupart des implémentations ratent) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 583.29 m 539.28 583.29 l S Q
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 61.00 570.09 Td (`AuthenticatedUsers`) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 164.03 570.09 Td (Ne veut pas dire « mes utilisateurs » mais ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 8.3 Tf 320.40 570.09 Td (n'importe) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 354.27 570.09 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 8.3 Tf 356.58 570.09 Td (quel) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 372.27 570.09 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 8.3 Tf 374.57 570.09 Td (titulaire) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 401.32 570.09 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 8.3 Tf 403.63 570.09 Td (d'un) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 419.06 570.09 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 8.3 Tf 421.37 570.09 Td (compte) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 448.58 570.09 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 8.3 Tf 450.89 570.09 Td (AWS) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 469.80 570.09 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 8.3 Tf 472.11 570.09 Td (au) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 481.34 570.09 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 8.3 Tf 483.64 570.09 Td (monde) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 509.02 570.09 Td (. Donc) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 164.03 558.89 Td (public.) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 554.89 m 539.28 554.89 l S Q
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 61.00 541.69 Td (`Statement`) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 106.65 541.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 108.96 541.69 Td (dict) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 123.71 541.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 126.02 541.69 Td (ou) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 61.00 530.49 Td (liste) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 164.03 541.69 Td (Le langage de policy IAM autorise les deux. Ne traiter que la liste rate la moitié des cas.) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 526.49 m 539.28 526.49 l S Q
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 61.00 513.29 Td (`Deny`) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 86.82 513.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 89.13 513.29 Td (sur) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 102.04 513.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 104.35 513.29 Td (`*`) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 164.03 513.29 Td (C'est une protection, pas un risque. Le signaler produit un faux positif. Une ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 8.3 Tf 440.58 513.29 Td (Condition) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 485.40 513.29 Td ( restreint) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 164.03 502.09 Td (aussi.) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 498.09 m 539.28 498.09 l S Q
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 61.00 484.89 Td (`::/0`) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 164.03 484.89 Td (IPv6 aussi ouvert que ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 8.3 Tf 246.15 484.89 Td (0.0.0.0/0) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 290.97 484.89 Td (, et systématiquement oublié.) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 480.89 m 539.28 480.89 l S Q
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 61.00 467.69 Td (`IpProtocol:) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 107.57 467.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 109.88 467.69 Td ("-1"`) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 164.03 467.69 Td (Ouvre tous les ports ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 240.60 467.69 Td (et) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 247.98 467.69 Td ( n'a ni ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 8.3 Tf 272.18 467.69 Td (FromPort) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 312.02 467.69 Td ( ni ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 8.3 Tf 323.09 467.69 Td (ToPort) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 352.97 467.69 Td (. Un code qui lit ces champs plante ou conclut à) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 164.03 456.49 Td (tort.) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 452.49 m 539.28 452.49 l S Q
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 61.00 439.29 Td (Clé) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 73.91 439.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 76.22 439.29 Td (IAM) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 91.44 439.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 8.3 Tf 93.74 439.29 Td (inactive) Tj ET
+BT 0.110 0.120 0.140 rg /F1 8.3 Tf 164.03 439.29 Td (Ne produit aucun finding de rotation : ce n'est pas un risque. Le signaler noie le rapport.) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 435.29 m 539.28 435.29 l S Q
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 410.89 Td (Deux subtilités supplémentaires qui montrent la profondeur :) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 394.49 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 71.00 394.49 Td (Un) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 83.80 394.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 86.47 394.49 Td (trail) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 104.07 394.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 106.74 394.49 Td (CloudTrail) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 154.21 394.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 156.88 394.49 Td (multi-région) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 212.35 394.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 215.02 394.49 Td (mais) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 236.90 394.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 239.57 394.49 Td (arrêté) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 266.24 394.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 268.91 394.49 Td (ne) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 280.12 394.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 282.79 394.49 Td (protège) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 317.99 394.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 320.66 394.49 Td (rien.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 340.93 394.49 Td ( D'où LOG-005, séparé de LOG-001 :) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 71.00 381.09 Td (describe_trails) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 157.40 381.09 Td ( donne la configuration, ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 259.86 381.09 Td (get_trail_status) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 352.02 381.09 Td ( donne l'état réel.) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 367.69 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 71.00 367.69 Td (UDP) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 91.27 367.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 93.93 367.69 Td (3306) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 115.28 367.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 117.95 367.69 Td (n'est) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 139.98 367.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 142.64 367.69 Td (pas) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 159.19 367.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 161.85 367.69 Td (une) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 178.92 367.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 181.59 367.69 Td (exposition) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 229.60 367.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 232.27 367.69 Td (MySQL.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 268.01 367.69 Td ( Le protocole compte.) Tj ET
+q 0.800 0.820 0.860 RG 0.7 w 56.00 359.69 m 539.28 359.69 l S Q
+BT 0.090 0.260 0.480 rg /F2 13.5 Tf 56.00 321.19 Td (9.5 Cinq histoires prêtes à raconter) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 299.79 Td (Format : situation, ce que j'ai fait, ce que j'en ai tiré. 60 à 90 secondes chacune.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 280.39 Td (1.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 64.01 280.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 66.68 280.39 Td (La) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 77.88 280.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 80.55 280.39 Td (CI) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 90.15 280.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 92.82 280.39 Td (cassée) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 124.84 280.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 127.51 280.39 Td (par) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 142.45 280.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 145.12 280.39 Td (une) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 162.19 280.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 164.85 280.39 Td (dépendance) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 220.87 280.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 223.54 280.39 Td (transitive.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 268.89 280.39 Td ( Mon pipeline a échoué en 3 secondes, avant la moindre étape,) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 266.99 Td (alors que je n'avais rien changé. La cause : une action que j'avais épinglée par SHA appelait elle-même une) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 253.59 Td (sous-action par tag, et ce tag avait disparu. J'ai supprimé l'action au profit de l'image Docker officielle épinglée.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 240.19 Td (J'ai appris que l'épinglage ne vaut qu'à la profondeur où on l'applique. ? ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 362.71 240.19 Td (Répond) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 396.33 240.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 399.00 240.19 Td (à) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 404.34 240.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 407.00 240.19 Td (:) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 409.67 240.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 412.34 240.19 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 417.68 240.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 420.35 240.19 Td (raconte-moi) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 471.03 240.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 473.70 240.19 Td (un) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 484.37 240.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 487.04 240.19 Td (incident) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 520.12 240.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 522.79 240.19 Td (que) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 56.00 226.79 Td (tu) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 64.01 226.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 66.68 226.79 Td (as) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 76.81 226.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 79.48 226.79 Td (diagnostiqué.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 136.58 226.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 139.25 226.79 Td (») Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 207.39 Td (2.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 64.01 207.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 66.68 207.39 Td (Le) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 77.88 207.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 80.55 207.39 Td (typage) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 111.49 207.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 114.16 207.39 Td (strict) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 137.63 207.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 140.30 207.39 Td (qui) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 154.70 207.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 157.37 207.39 Td (trouve) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 186.70 207.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 189.37 207.39 Td (ce) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 200.05 207.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 202.72 207.39 Td (que) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 219.79 207.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 222.45 207.39 Td (les) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 235.80 207.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 238.47 207.39 Td (tests) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 260.87 207.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 263.54 207.39 Td (ne) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 274.75 207.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 277.41 207.39 Td (trouvent) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 315.81 207.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 318.48 207.39 Td (pas.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 337.69 207.39 Td ( 217 tests passaient au vert. ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 460.43 207.39 Td (mypy) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 483.47 207.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 486.14 207.39 Td (--strict) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 193.99 Td (a trouvé 4 erreurs de plus, dont une vraie : une liste typée ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 304.13 193.99 Td (list[Any) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 350.21 193.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 352.88 193.99 Td (|) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 358.64 193.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 361.31 193.99 Td (None]) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 390.11 193.99 Td ( passée à ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 434.40 193.99 Td (str.join) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 480.48 193.99 Td (. Le code) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 180.59 Td (marchait par chance, parce que le filtre suivait immédiatement. Le typage raisonne sur ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 425.75 180.59 Td (tous) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 443.90 180.59 Td ( les chemins, pas sur) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 167.19 Td (ceux auxquels j'ai pensé. ? ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 173.63 167.19 Td (Répond) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 207.25 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 209.92 167.19 Td (à) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 215.25 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 217.92 167.19 Td (:) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 220.59 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 223.26 167.19 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 228.60 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 231.27 167.19 Td (à) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 236.60 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 239.27 167.19 Td (quoi) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 257.42 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 260.09 167.19 Td (sert) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 276.09 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 278.76 167.19 Td (le) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 286.23 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 288.90 167.19 Td (typage) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 317.72 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 320.38 167.19 Td (si) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 327.32 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 329.98 167.19 Td (on) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 340.66 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 343.33 167.19 Td (a) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 348.67 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 351.33 167.19 Td (des) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 366.81 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 369.48 167.19 Td (tests) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 389.75 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 392.42 167.19 Td (?) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 397.76 167.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 400.43 167.19 Td (») Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 147.79 Td (3.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 64.01 147.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 66.68 147.79 Td (L'identité) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 108.96 147.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 111.63 147.79 Td (de) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 122.84 147.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 125.50 147.79 Td (finding) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 157.50 147.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 160.17 147.79 Td (incomplète.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 213.52 147.79 Td ( En ajoutant l'historisation, ma clé primaire ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 396.21 147.79 Td (\(scan,) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 430.77 147.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 433.44 147.79 Td (check,) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 468.00 147.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 470.67 147.79 Td (ressource\)) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 134.39 Td (écrasait silencieusement un finding : le contrôle sur les clés IAM en émet deux par utilisateur, même ARN. J'ai) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 120.99 Td (ajouté un champ ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 129.64 120.99 Td (subject) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 169.96 120.99 Td (. Le bug ne se voyait pas au premier scan et aurait pourri toutes les données trois) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 107.59 Td (mois plus tard. ? ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 129.09 107.59 Td (Répond) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 162.71 107.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 165.38 107.59 Td (à) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 170.72 107.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 173.39 107.59 Td (:) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 176.06 107.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 178.73 107.59 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 184.06 107.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 186.73 107.59 Td (une) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 202.75 107.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 205.41 107.59 Td (erreur) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 231.02 107.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 233.69 107.59 Td (de) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 244.36 107.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 247.03 107.59 Td (conception) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 293.46 107.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 296.12 107.59 Td (que) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 312.14 107.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 314.81 107.59 Td (tu) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 322.81 107.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 325.48 107.59 Td (as) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 335.62 107.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 338.29 107.59 Td (rattrapée) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 376.71 107.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 379.38 107.59 Td (?) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 384.71 107.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 387.38 107.59 Td (») Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 88.19 Td (4.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 64.01 88.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 66.68 88.19 Td (Le) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 77.88 88.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 80.55 88.19 Td (témoin) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 112.02 88.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 114.68 88.19 Td (conforme) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 158.42 88.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 161.09 88.19 Td (dans) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 183.50 88.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 186.17 88.19 Td (le) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 194.17 88.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 196.84 88.19 Td (labo.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 219.25 88.19 Td ( Mon labo Terraform crée des ressources vulnérables, mais aussi un) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 74.79 Td (bucket correctement configuré. Un scanner qui met tout en ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 308.38 74.79 Td (FAIL) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 331.42 74.79 Td ( n'est pas plus utile qu'un scanner qui ne détecte) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 61.39 Td (rien : le témoin valide l'absence de faux positifs. ? ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 269.67 61.39 Td (Répond) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 303.29 61.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 305.96 61.39 Td (à) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 311.29 61.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 313.96 61.39 Td (:) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 316.63 61.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 319.30 61.39 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 324.64 61.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 327.31 61.39 Td (comment) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 366.78 61.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 369.45 61.39 Td (sais-tu) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 397.72 61.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 400.39 61.39 Td (que) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 416.40 61.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 419.07 61.39 Td (ton) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 432.42 61.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 435.08 61.39 Td (outil) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 452.69 61.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 455.36 61.39 Td (marche) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 487.37 61.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 490.04 61.39 Td (?) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 495.37 61.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 498.04 61.39 Td (») Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 42.00 m 539.28 42.00 l S Q
+BT 0.420 0.450 0.500 rg /F1 8 Tf 56.00 30.00 Td (cspm-lite - fiche d'entretien) Tj ET
+BT 0.420 0.450 0.500 rg /F1 8 Tf 523.71 30.00 Td (5 / 7) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 21544 >>
+stream
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 764.49 Td (5.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 64.01 764.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 66.68 764.49 Td (La) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 77.88 764.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 80.55 764.49 Td (friction) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 113.08 764.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 115.75 764.49 Td (comme) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 149.36 764.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 152.03 764.49 Td (fonctionnalité.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 217.64 764.49 Td ( J'ai rendu obligatoires la justification et la date d'expiration de toute) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 751.09 Td (exclusion. C'est plus contraignant que les outils concurrents, et c'est voulu : sans date, une exception de sécurité) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 737.69 Td (devient permanente. J'ai écarté un champ ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 237.12 737.69 Td (permanent) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 288.96 737.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 291.63 737.69 Td (=) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 297.39 737.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 300.06 737.69 Td (true) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 323.10 737.69 Td ( justement parce que « permanent » est ce qu'on) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 724.29 Td (cherche à empêcher. ? ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 156.85 724.29 Td (Répond) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 190.47 724.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 193.14 724.29 Td (à) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 198.47 724.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 201.14 724.29 Td (:) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 203.81 724.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 206.48 724.29 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 211.82 724.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 214.49 724.29 Td (un) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 225.16 724.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 227.83 724.29 Td (choix) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 250.24 724.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 252.91 724.29 Td (produit) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 282.25 724.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 284.92 724.29 Td (que) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 300.93 724.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 303.60 724.29 Td (tu) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 311.61 724.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 314.28 724.29 Td (as) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 324.42 724.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 327.08 724.29 Td (défendu) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 361.78 724.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 364.45 724.29 Td (?) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 369.79 724.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 372.45 724.29 Td (») Tj ET
+q 0.800 0.820 0.860 RG 0.7 w 56.00 713.29 m 539.28 713.29 l S Q
+BT 0.090 0.260 0.480 rg /F2 13.5 Tf 56.00 674.79 Td (9.6 Les questions de relance et leurs réponses) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 653.39 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 61.34 653.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 64.01 653.39 Td (En) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 76.28 653.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 78.94 653.39 Td (quoi) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 99.21 653.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 101.88 653.39 Td (c'est) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 123.37 653.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 126.04 653.39 Td (différent) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 164.44 653.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 167.11 653.39 Td (de) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 178.31 653.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 180.98 653.39 Td (Prowler) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 216.20 653.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 218.86 653.39 Td (?) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 224.73 653.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 227.40 653.39 Td (») Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 232.74 653.39 Td ( Ce n'est pas différent, c'était volontaire. Prowler est mature, je ne) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 639.99 Td (prétends pas faire mieux. L'objectif était de reconstruire l'architecture pour comprendre les décisions qu'elle) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 626.59 Td (contient. J'ai lu leur code : eux chargent les checks dynamiquement depuis le système de fichiers, moi j'utilise un) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 613.19 Td (registre explicite — plus simple à tracer, moins souple.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 593.79 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 61.34 593.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 64.01 593.79 Td (Quelles) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 98.69 593.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 101.36 593.79 Td (sont) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 121.63 593.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 124.29 593.79 Td (les) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 137.64 593.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 140.31 593.79 Td (limites) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 170.72 593.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 173.39 593.79 Td (de) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 184.59 593.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 187.26 593.79 Td (ton) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 202.19 593.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 204.86 593.79 Td (outil) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 225.12 593.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 227.79 593.79 Td (?) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 233.66 593.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 236.33 593.79 Td (») Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 241.66 593.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 244.33 593.79 Td (\(la) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 255.00 593.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 257.67 593.79 Td (meilleure) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 296.60 593.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 299.27 593.79 Td (question\)) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 338.76 593.79 Td ( Quatre, énoncées dans le README :) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 577.39 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 577.39 Td (pas d') Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 96.32 577.39 Td (analyse) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 131.54 577.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 134.21 577.39 Td (de) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 145.41 577.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 148.08 577.39 Td (chemins) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 187.03 577.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 189.69 577.39 Td (d'attaque) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 231.98 577.39 Td ( : je sors des findings isolés, pas le chemin entre une exposition externe) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 563.99 Td (et une donnée sensible ;) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 550.59 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 550.59 Td (pas de ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 102.49 550.59 Td (contexte) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 141.96 550.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 144.63 550.59 Td (métier) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 173.44 550.59 Td (, donc pas de vraie priorisation : un bucket de logs publics est un faux positif que je) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 537.19 Td (ne sais pas distinguer ;) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 523.79 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 523.79 Td (c'est un ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 106.45 523.79 Td (instantané) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 154.46 523.79 Td (, pas de la détection temps réel ;) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 510.39 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 71.00 510.39 Td (AWS) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 93.40 510.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 96.07 510.39 Td (uniquement) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 150.47 510.39 Td (, et mono-compte \(pas d'AWS Organizations\).) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 493.99 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 61.34 493.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 64.01 493.99 Td (Pourquoi) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 106.14 493.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 108.81 493.99 Td (des) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 125.35 493.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 128.02 493.99 Td (threads) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 162.69 493.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 165.36 493.99 Td (et) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 173.90 493.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 176.57 493.99 Td (pas) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 193.11 493.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 195.78 493.99 Td (asyncio) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 231.53 493.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 234.20 493.99 Td (?) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 240.06 493.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 242.73 493.99 Td (») Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 248.07 493.99 Td ( Le scan est ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 302.50 493.99 Td (I/O) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 315.31 493.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 317.97 493.99 Td (bound) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 344.66 493.99 Td ( : on attend l'API AWS, le GIL est relâché) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 480.59 Td (pendant l'attente réseau. ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 164.04 480.59 Td (asyncio) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 204.36 480.59 Td ( aurait demandé ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 276.40 480.59 Td (aioboto3) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 322.48 480.59 Td ( et compliqué le code pour un gain nul à cette) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 467.19 Td (échelle — 17 régions, pas 10 000 requêtes.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 447.79 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 61.34 447.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 64.01 447.79 Td (Comment) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 108.27 447.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 110.94 447.79 Td (testes-tu) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 150.94 447.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 153.61 447.79 Td (du) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 165.34 447.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 168.01 447.79 Td (code) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 190.42 447.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 193.09 447.79 Td (qui) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 207.49 447.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 210.16 447.79 Td (appelle) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 243.24 447.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 245.91 447.79 Td (AWS) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 268.30 447.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 270.97 447.79 Td (?) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 276.84 447.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 279.51 447.79 Td (») Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 284.84 447.79 Td ( Deux niveaux. Les checks sont purs : je leur injecte des) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 434.39 Td (inventaires fabriqués, c'est instantané et ça couvre tous les cas limites. Les collecteurs, avec ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 452.13 434.39 Td (moto) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 475.17 434.39 Td ( qui simule) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 420.99 Td (AWS en mémoire. Le point important : mon architecture rend le premier niveau possible. C'est le retour sur) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 407.59 Td (investissement de la séparation.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 388.19 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 61.34 388.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 64.01 388.19 Td (Comment) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 108.27 388.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 110.94 388.19 Td (mesures-tu) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 162.68 388.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 165.35 388.19 Td (que) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 182.42 388.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 185.09 388.19 Td (la) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 193.10 388.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 195.77 388.19 Td (posture) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 230.97 388.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 233.64 388.19 Td (s'améliore) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 280.75 388.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 283.41 388.19 Td (?) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 289.28 388.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 291.95 388.19 Td (») Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 297.29 388.19 Td ( Pas au nombre de vulnérabilités — ce chiffre dépend du) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 374.79 Td (périmètre scanné, ajouter une région le fait « empirer » sans qu'aucune configuration ait changé. Je mesure le) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 361.39 Td (délai) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 77.88 361.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 80.55 361.39 Td (moyen) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 111.49 361.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 114.16 361.39 Td (de) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 125.36 361.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 128.03 361.39 Td (correction) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 174.97 361.39 Td ( par sévérité et le ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 251.27 361.39 Td (taux) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 271.01 361.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 273.68 361.39 Td (de) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 284.88 361.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 287.55 361.39 Td (récidive) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 323.84 361.39 Td (, qui mesurent le processus. Techniquement, je) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 347.99 Td (distingue l') Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 101.05 347.99 Td (état) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 117.07 347.99 Td ( \(le score, lu sur un snapshot\) de l') Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 263.49 347.99 Td (événement) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 310.99 347.99 Td ( \(l'ouverture et la fermeture d'un finding entre deux) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 334.59 Td (scans\).) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 315.19 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 61.34 315.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 64.01 315.19 Td (Comment) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 108.27 315.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 110.94 315.19 Td (appliques-tu) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 168.01 315.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 170.68 315.19 Td (le) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 178.69 315.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 181.36 315.19 Td (moindre) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 219.23 315.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 221.90 315.19 Td (privilège) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 261.38 315.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 264.05 315.19 Td (?) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 269.92 315.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 272.59 315.19 Td (») Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 277.92 315.19 Td ( Le scanner tourne avec la policy managée) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 56.00 301.79 Td (SecurityAudit) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 130.88 301.79 Td (, jamais ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 166.62 301.79 Td (AdministratorAccess) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 276.06 301.79 Td ( : un outil d'audit sur-privilégié devient lui-même le risque) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 288.39 Td (principal. Le labo Terraform crée un rôle dédié avec ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 278.49 288.39 Td (ExternalId) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 336.09 288.39 Td (, qui protège du ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 405.47 288.39 Td (confused) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 444.43 288.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 447.09 288.39 Td (deputy) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 475.91 288.39 Td ( — sans lui, un) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 274.99 Td (autre client du même prestataire pourrait deviner l'ARN du rôle et se faire accéder au compte par le prestataire.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 255.59 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 61.34 255.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 64.01 255.59 Td (Qu'est-ce) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 107.37 255.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 110.04 255.59 Td (que) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 127.11 255.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 129.78 255.59 Td (tu) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 138.84 255.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 141.51 255.59 Td (ferais) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 167.12 255.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 169.79 255.59 Td (différemment) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 230.60 255.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 233.26 255.59 Td (?) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 239.13 255.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 241.80 255.59 Td (») Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 247.14 255.59 Td ( J'aurais figé le modèle de ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 361.02 255.59 Td (Finding) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 401.34 255.59 Td ( plus tôt : je l'ai fait évoluer trois) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 242.19 Td (fois, et chaque changement m'a coûté du travail dans les quatre reporters. Et j'aurais écrit le labo Terraform avant) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 228.79 Td (les checks, pour valider au fur et à mesure au lieu de découvrir des écarts à la fin.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 209.39 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 61.34 209.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 64.01 209.39 Td (Tu) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 75.74 209.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 78.41 209.39 Td (l'utiliserais) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 128.18 209.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 130.85 209.39 Td (en) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 142.05 209.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 144.72 209.39 Td (production) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 194.85 209.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 197.52 209.39 Td (?) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 203.39 209.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 206.06 209.39 Td (») Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 211.40 209.39 Td ( Non, pas tel quel. Pas la couverture de Prowler, pas de multi-comptes, pas) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 195.99 Td (de retour terrain sur les faux positifs. En revanche il m'a donné les bases pour utiliser et comprendre un vrai) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 182.59 Td (CSPM — y compris pour savoir quoi contester dans ses résultats.) Tj ET
+q 0.800 0.820 0.860 RG 0.7 w 56.00 171.59 m 539.28 171.59 l S Q
+BT 0.090 0.260 0.480 rg /F2 13.5 Tf 56.00 133.09 Td (9.7 Le socle de connaissances à réviser) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 111.69 Td (À savoir expliquer à l'oral, en moins de deux minutes, sans notes.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 92.29 Td (Cloud) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 83.20 92.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 85.87 92.29 Td (et) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 94.40 92.29 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 97.07 92.29 Td (IAM) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 75.89 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 75.89 Td (Le modèle de responsabilité partagée : AWS sécurise ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 302.57 75.89 Td (le) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 310.04 75.89 Td ( cloud, le client sécurise ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 414.61 75.89 Td (dans) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 435.43 75.89 Td ( le cloud. Quasiment) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 62.49 Td (toutes les brèches médiatisées sont des erreurs client.) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 42.00 m 539.28 42.00 l S Q
+BT 0.420 0.450 0.500 rg /F1 8 Tf 56.00 30.00 Td (cspm-lite - fiche d'entretien) Tj ET
+BT 0.420 0.450 0.500 rg /F1 8 Tf 523.71 30.00 Td (6 / 7) Tj ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 16 0 R >>
+endobj
+18 0 obj
+<< /Length 14484 >>
+stream
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 764.49 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 764.49 Td (Rôle vs utilisateur IAM : le rôle n'a pas de credentials permanents, on l'assume via STS. C'est toujours la) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 751.09 Td (bonne réponse.) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 737.69 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 737.69 Td (L'ordre d'évaluation des policies : un ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 228.34 737.69 Td (Deny) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 251.38 737.69 Td ( explicite gagne toujours ; sans ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 385.85 737.69 Td (Allow) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 414.65 737.69 Td ( explicite, c'est refusé.) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 724.29 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 724.29 Td (La chaîne de credentials boto3 : paramètres ? variables d'environnement ? ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 391.39 724.29 Td (~/.aws/credentials) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 495.07 724.29 Td ( ? rôle de) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 710.89 Td (conteneur ? rôle d'instance \(IMDS\).) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 694.49 Td (Les) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 72.54 694.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 75.21 694.49 Td (quatre) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 104.55 694.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 107.22 694.49 Td (chemins) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 146.16 694.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 148.83 694.49 Td (d'exposition) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 204.99 694.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 207.66 694.49 Td (d'un) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 227.54 694.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 230.21 694.49 Td (bucket) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 261.15 694.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 263.82 694.49 Td (S3) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 275.56 694.49 Td ( ACL, bucket policy, absence de Block Public Access,) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 681.09 Td (hébergement de site. Un outil qui n'en vérifie qu'un donne une fausse assurance.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 661.69 Td (La) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 67.20 661.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 69.87 661.69 Td (brèche) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 101.35 661.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 104.02 661.69 Td (Capital) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 136.03 661.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 138.69 661.69 Td (One) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 157.37 661.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 160.04 661.69 Td (\(2019\)) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 187.78 661.69 Td ( Une SSRF sur une application derrière un WAF mal configuré ? lecture de) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 56.00 648.29 Td (169.254.169.254) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 142.40 648.29 Td ( ? credentials d'un rôle d'instance sur-privilégié ? exfiltration de 100 millions de dossiers) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 634.89 Td (depuis S3. 80 M$ d'amende. IMDSv2 corrige la classe de faille en exigeant un token obtenu par ) Tj ET
+BT 0.110 0.120 0.140 rg /F3 9.6 Tf 465.51 634.89 Td (PUT) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 482.79 634.89 Td (, ce qu'une) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 621.49 Td (SSRF simple ne peut pas produire. C'est le contrôle NET-006.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 602.09 Td (Réseau) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 90.15 602.09 Td ( Security group = pare-feu ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 204.07 602.09 Td (stateful) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 235.02 602.09 Td ( au niveau de l'interface, autorise seulement. NACL = ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 464.43 602.09 Td (stateless) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 502.31 602.09 Td ( au) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 588.69 Td (niveau du sous-réseau, autorise et refuse. L'alternative moderne à l'ouverture du port 22 est ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 449.20 588.69 Td (SSM) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 470.00 588.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 472.67 588.69 Td (Session) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 575.29 Td (Manager) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 95.48 575.29 Td (.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 555.89 Td (Journalisation) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 121.62 555.89 Td ( CloudTrail = plan de contrôle \(qui a appelé quelle API\). VPC Flow Logs = plan réseau. S3 access) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 542.49 Td (logs / data events = plan données. La validation d'intégrité des fichiers CloudTrail permet de détecter ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 486.58 542.49 Td (a) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 491.92 542.49 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F4 9.6 Tf 494.59 542.49 Td (posteriori) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 529.09 Td (un attaquant qui a effacé ses traces.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 509.69 Td (Conformité) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 107.20 509.69 Td ( CIS AWS Foundations Benchmark : ~60 contrôles, sections 1.x IAM, 2.x stockage, 3.x logging, 4.x) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 496.29 Td (monitoring, 5.x réseau. ASFF est le schéma de Security Hub : produire de l'ASFF, c'est s'insérer dans un flux) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 482.89 Td (existant plutôt que d'être ignoré.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 56.00 463.49 Td (DevSecOps) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 109.36 463.49 Td ( Multi-stage : le stage de build a les compilateurs, l'image finale non — moins de surface d'attaque.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 450.09 Td (Non-root : une évasion du processus ne donne pas root. SBOM : l'inventaire des composants, la question posée) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 436.69 Td (après Log4Shell. Épinglage par SHA : un tag est mutable — ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 310.01 436.69 Td (mais) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 331.88 436.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 334.55 436.69 Td (seulement) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 382.04 436.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 384.70 436.69 Td (à) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 390.04 436.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 392.71 436.69 Td (la) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 400.72 436.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 403.39 436.69 Td (profondeur) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 454.58 436.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 457.25 436.69 Td (où) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 468.98 436.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 471.65 436.69 Td (on) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 483.38 436.69 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 486.05 436.69 Td (l'applique) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 56.00 423.29 Td (\(ADR-006\).) Tj ET
+q 0.800 0.820 0.860 RG 0.7 w 56.00 412.29 m 539.28 412.29 l S Q
+BT 0.090 0.260 0.480 rg /F2 13.5 Tf 56.00 373.79 Td (9.8 Ce qu'il ne faut pas faire) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 355.39 Td (1.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 76.00 355.39 Td (Ne) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 88.27 355.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 90.94 355.39 Td (présentez) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 135.75 355.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 138.42 355.39 Td (pas) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 154.96 355.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 157.63 355.39 Td (ce) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 168.30 355.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 170.97 355.39 Td (que) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 188.04 355.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 190.71 355.39 Td (vous) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 213.12 355.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 215.79 355.39 Td (n'avez) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 244.75 355.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 247.42 355.39 Td (pas) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 263.96 355.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 266.63 355.39 Td (fait) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 281.03 355.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 283.70 355.39 Td (tourner.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 319.96 355.39 Td ( Si vous n'avez pas encore scanné un vrai compte) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 76.00 341.99 Td (AWS, dites « le mode démo et les tests d'intégration passent, je déploie le labo cette semaine ».) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 328.59 Td (2.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 76.00 328.59 Td (Ne) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 88.27 328.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 90.94 328.59 Td (récitez) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 121.35 328.59 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 124.02 328.59 Td (pas.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 143.23 328.59 Td ( Retenez la structure — problème, architecture, validation, apprentissage — pas les phrases.) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 315.19 Td (3.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 76.00 315.19 Td (N'énumérez) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 130.03 315.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 132.70 315.19 Td (pas) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 149.24 315.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 151.91 315.19 Td (les) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 165.25 315.19 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 167.92 315.19 Td (technologies.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 229.80 315.19 Td ( Une décision expliquée vaut dix outils cités.) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 301.79 Td (4.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 76.00 301.79 Td (Ne) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 88.27 301.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 90.94 301.79 Td (dites) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 113.34 301.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 116.01 301.79 Td (jamais) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 145.90 301.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 148.57 301.79 Td («) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 153.90 301.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 156.57 301.79 Td (c'est) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 178.07 301.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 180.74 301.79 Td (juste) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 203.14 301.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 205.81 301.79 Td (un) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 217.54 301.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 220.21 301.79 Td (projet) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 246.88 301.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 249.55 301.79 Td (perso) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 275.69 301.79 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 278.36 301.79 Td (».) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 288.39 Td (5.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 76.00 288.39 Td (Préparez) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 116.55 288.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 119.22 288.39 Td (vos) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 135.76 288.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 138.43 288.39 Td (limites) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 168.84 288.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 171.51 288.39 Td (autant) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 200.31 288.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 202.98 288.39 Td (que) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 220.05 288.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 222.72 288.39 Td (vos) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 239.26 288.39 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 241.93 288.39 Td (réussites.) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 286.75 288.39 Td ( Un candidat sans limites à énoncer n'a pas assez creusé.) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 274.99 Td (6.) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 76.00 274.99 Td (Terminez) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 118.14 274.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 120.81 274.99 Td (par) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 135.75 274.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 138.42 274.99 Td (une) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 155.49 274.99 Td ( ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 158.16 274.99 Td (question) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 198.16 274.99 Td ( : « vous utilisez quoi pour la posture cloud, et sur combien de comptes ? ») Tj ET
+q 0.800 0.820 0.860 RG 0.7 w 56.00 266.99 m 539.28 266.99 l S Q
+BT 0.090 0.260 0.480 rg /F2 13.5 Tf 56.00 228.49 Td (9.9 La veille de l'entretien) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 210.09 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 210.09 Td (Relire cette fiche, pas le code.) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 196.69 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 196.69 Td (Redire le pitch de 2 minutes à voix haute, une fois, chronométré.) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 183.29 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 183.29 Td (Redessiner l'architecture sur une feuille, sans regarder.) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 169.89 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 169.89 Td (Choisir ) Tj ET
+BT 0.110 0.120 0.140 rg /F2 9.6 Tf 103.53 169.89 Td (une) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 120.60 169.89 Td ( des cinq histoires, celle qui colle au poste.) Tj ET
+BT 0.090 0.260 0.480 rg /F1 9.6 Tf 59.00 156.49 Td (•) Tj ET
+BT 0.110 0.120 0.140 rg /F1 9.6 Tf 71.00 156.49 Td (Vérifier que le dépôt s'ouvre et que le rapport d'exemple s'affiche.) Tj ET
+q 0.800 0.820 0.860 RG 0.5 w 56.00 42.00 m 539.28 42.00 l S Q
+BT 0.420 0.450 0.500 rg /F1 8 Tf 56.00 30.00 Td (cspm-lite - fiche d'entretien) Tj ET
+BT 0.420 0.450 0.500 rg /F1 8 Tf 523.71 30.00 Td (7 / 7) Tj ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 18 0 R >>
+endobj
+20 0 obj
+<< /Type /Catalog /Pages 5 0 R >>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000000214 00000 n 
+0000000309 00000 n 
+0000000414 00000 n 
+0000000512 00000 n 
+0000001569 00000 n 
+0000001731 00000 n 
+0000004364 00000 n 
+0000004526 00000 n 
+0000014403 00000 n 
+0000014567 00000 n 
+0000024404 00000 n 
+0000024568 00000 n 
+0000050225 00000 n 
+0000050389 00000 n 
+0000071986 00000 n 
+0000072150 00000 n 
+0000086687 00000 n 
+0000086851 00000 n 
+trailer
+<< /Size 21 /Root 20 0 R >>
+startxref
+86901
+%%EOF

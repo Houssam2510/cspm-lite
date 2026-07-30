@@ -42,9 +42,20 @@ LABEL org.opencontainers.image.title="cspm-lite" \
       org.opencontainers.image.licenses="MIT" \
       org.opencontainers.image.source="https://github.com/Houssam2510/cspm-lite"
 
-# Utilisateur non privilegie, sans shell de connexion.
-RUN groupadd --system --gid 10001 cspm \
-    && useradd --system --uid 10001 --gid cspm --no-create-home --shell /usr/sbin/nologin cspm
+# Utilisateur non privilegie, sans shell de connexion. L'UID 10001 sort volontairement
+# de la plage systeme : il ne collidera avec aucun compte de l'hote si le conteneur
+# monte un volume.
+RUN groupadd --gid 10001 cspm \
+    && useradd --uid 10001 --gid cspm --no-create-home --shell /usr/sbin/nologin cspm \
+    # L'image de base embarque son propre pip dans /usr/local, en dehors du venv.
+    # Le retirer aussi : le runtime n'execute que cspm-lite, jamais une installation.
+    && rm -rf /usr/local/lib/python3.12/site-packages/pip* \
+              /usr/local/lib/python3.12/site-packages/setuptools* \
+              /usr/local/lib/python3.12/site-packages/pkg_resources \
+              /usr/local/lib/python3.12/site-packages/wheel* \
+              /usr/local/bin/pip* \
+              /usr/local/bin/wheel \
+    && rm -rf /root/.cache /var/lib/apt/lists/*
 
 COPY --from=builder /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH" \

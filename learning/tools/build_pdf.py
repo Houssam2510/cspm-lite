@@ -555,11 +555,47 @@ DOCS = [
     "07-maximiser-le-bagage.md",
     "exercices/README.md",
     "08-pitch-entretien.md",
+    "09-fiche-entretien.md",
 ]
+
+
+DOCS_ENTRETIEN = ["09-fiche-entretien.md"]
+
+
+def _construire(root: Path, docs: list[str], titre: str, sous_titre: str,
+                meta: list[str], sortie: str, label: str) -> None:
+    body = Renderer()
+    for name in docs:
+        path = root / name
+        if not path.exists():
+            continue
+        body.render(parse(path.read_text(encoding="utf-8")))
+    body.finish()
+    cover = cover_ops(titre, sous_titre, meta)
+    n_toc = len(toc_pages(body.toc, 0))
+    pages = [cover, *toc_pages(body.toc, 1 + n_toc), *body.pages]
+    out = root / sortie
+    build(pages, out, label)
+    print(f"OK : {out}  ({len(pages)} pages, {out.stat().st_size // 1024} Ko)")
 
 
 def main() -> None:
     root = Path(__file__).resolve().parent.parent
+    _construire(
+        root,
+        DOCS_ENTRETIEN,
+        "cspm-lite",
+        "Fiche d'entretien : ce que le projet fait, et ce qu'il faut savoir expliquer",
+        [
+            "Synthese a relire avant un entretien technique. Tout ce qui est affirme "
+            "ici est verifiable dans le depot.",
+            "25 controles CIS · 217 tests · 87 % de couverture · 1 dependance runtime.",
+            f"Genere le {date.today().isoformat()}.",
+        ],
+        "cspm-lite-entretien.pdf",
+        "cspm-lite - fiche d'entretien",
+    )
+
     body = Renderer()
     for name in DOCS:
         path = root / name
