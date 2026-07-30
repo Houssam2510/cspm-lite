@@ -554,6 +554,7 @@ DOCS = [
     "06-journal-de-bord.md",
     "07-maximiser-le-bagage.md",
     "exercices/README.md",
+    "08-pitch-entretien.md",
 ]
 
 

@@ -15,6 +15,7 @@ chaque étape, pas en la copiant.
 | [06-journal-de-bord.md](06-journal-de-bord.md) | Modèle de journal, checklist de progression, ressources |
 | [07-maximiser-le-bagage.md](07-maximiser-le-bagage.md) | Comment convertir 80 h de travail en compétence durable et démontrable |
 | [exercices/](exercices/README.md) | **6 exercices à coder toi-même**, 153 tests automatiques, protocole de correction |
+| [08-pitch-entretien.md](08-pitch-entretien.md) | Pitchs 30 s / 2 min, tableau blanc, 5 histoires, questions de relance |
 | [scripts/create_issues.sh](scripts/create_issues.sh) | Crée les labels et les 30 issues via `gh` |
 | [tools/build_pdf.py](tools/build_pdf.py) | Génère le PDF complet du guide |
 | `cspm-lite-guide.pdf` | Le guide entier en un seul PDF |
